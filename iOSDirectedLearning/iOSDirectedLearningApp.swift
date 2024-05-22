@@ -2,7 +2,7 @@
 import SwiftUI
 
 @main
-struct iOS_Directed_LearningApp: App {
+struct iOSDirectedLearningApp: App {
     var body: some Scene {
         WindowGroup {
             CategoriesView()

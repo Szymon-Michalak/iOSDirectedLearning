@@ -1,6 +1,6 @@
 
 import XCTest
-@testable import iOS_Directed_Learning
+@testable import iOSDirectedLearning
 
 class TextAndShapesConceptTests: XCTestCase {
 
