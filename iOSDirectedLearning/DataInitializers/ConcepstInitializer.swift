@@ -30,9 +30,9 @@ enum TextAndShapesTopic: String, CaseIterable, ConceptType {
     var description: String {
         switch self {
         case .textConcept:
-            return "A showcase of basic text modifiers"
+            return "A showcase of basic text modifiers."
         case .shapesConcept:
-            return "Exploring built in shapes"
+            return "Exploring built in shapes."
         case .maskConcept:
             return "Applying mask with animation."
         case .customShapesConcept:
