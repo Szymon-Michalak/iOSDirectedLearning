@@ -30,7 +30,7 @@ enum TextAndShapesConcept: String, CaseIterable, ExampleType {
     var description: String {
         switch self {
         case .textExample:
-            return "Text"
+            return "A showcase of basic text modifiers"
         case .shapesExample:
             return "Shapes"
         case .maskExample:
