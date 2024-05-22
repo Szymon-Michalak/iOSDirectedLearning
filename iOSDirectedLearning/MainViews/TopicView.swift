@@ -7,13 +7,13 @@ struct TopicView: View {
 
     init(topic: AnyTopic) {
         self.topic = topic
-        concepts = topic.examples.map { AnyConcept($0) }
+        concepts = topic.concepts.map { AnyConcept($0) }
     }
 
     var body: some View {
         List {
             ForEach(concepts, id: \.id) { example in
-                NavigationLink(destination: example.innerExample.view()) {
+                NavigationLink(destination: ConceptView(content: example.innerExample.view())) {
                     ExampleRowView(example: example.innerExample)
                 }
             }
@@ -43,5 +43,5 @@ struct ExampleRowView: View {
 }
 
 #Preview {
-    TopicView(topic: DataInitializer.categories[0].concepts[0])
+    TopicView(topic: DataInitializer.categories[0].topics[0])
 }

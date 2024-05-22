@@ -13,9 +13,9 @@ extension TextAndShapesConceptTests {
     }
     
     func testTextAndShapesConceptExamples() {
-            let concept = DataInitializer.textAndShapesTopic
-            for example in concept.examples {
-                XCTAssertTrue(TextAndShapesTopic.allCases.contains { $0.rawValue == example.type.id })
+            let topic = DataInitializer.textAndShapesTopic
+            for concept in topic.concepts {
+                XCTAssertTrue(TextAndShapesTopic.allCases.contains { $0.rawValue == concept.type.id })
             }
         }
 }
