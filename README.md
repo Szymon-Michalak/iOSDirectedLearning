@@ -79,6 +79,17 @@ Resources:
 
 - 🎥 🕰️ [How to use Mask in SwiftUI to create a 5-star rating button | Continued Learning #8](https://www.youtube.com/watch?v=pxx1ueCbnls&list=PLwvDm4VfkdpiagxAXCT33Rkwnc5IVhTar&index=9)
 
+### Custom shapes with straight lines
+
+Drawing custom shapes using path with lines.
+
+Code Snippets:
+
+- 🔴 [Custom Shapes](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/CustomShapesConceptView.swift)
+
+Resources:
+
+- 🎥 🕰️ [Custom Shapes in SwiftUI | Advanced Learning #5](https://www.youtube.com/watch?v=EHhgjOt_KFA&list=PLwvDm4Vfkdphc1LLLjCaEd87BEg07M97y&index=6)
 <!-- TEMPLATE FOR NEW CONCEPTS
 
   ### NewConcept
