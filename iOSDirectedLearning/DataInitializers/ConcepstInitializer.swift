@@ -32,7 +32,7 @@ enum TextAndShapesConcept: String, CaseIterable, ExampleType {
         case .textExample:
             return "A showcase of basic text modifiers"
         case .shapesExample:
-            return "Shapes"
+            return "Exploring built in shapes"
         case .maskExample:
             return "Mask"
         case .customShapesExample:
