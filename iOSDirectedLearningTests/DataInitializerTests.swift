@@ -5,29 +5,29 @@ import XCTest
 class DataInitializerTests: XCTestCase {
     
     func testTextAndShapesConceptInitialization() {
-        let concept = CategoryInitializer.textAndShapesConcept
+        let concept = DataInitializer.textAndShapesTopic
         XCTAssertEqual(concept.title, "Text and Shapes")
-        XCTAssertEqual(concept.examples.count, TextAndShapesConcept.allCases.count)
+        XCTAssertEqual(concept.examples.count, TextAndShapesTopic.allCases.count)
         
         let firstExample = concept.examples.first
-        XCTAssertEqual(firstExample?.title, TextAndShapesConcept.textExample.title)
-        XCTAssertEqual(firstExample?.description, TextAndShapesConcept.textExample.description)
+        XCTAssertEqual(firstExample?.title, TextAndShapesTopic.textConcept.title)
+        XCTAssertEqual(firstExample?.description, TextAndShapesTopic.textConcept.description)
 
         for example in concept.examples {
-            XCTAssertTrue(TextAndShapesConcept.allCases.contains { $0.rawValue == example.type.id })
+            XCTAssertTrue(TextAndShapesTopic.allCases.contains { $0.rawValue == example.type.id })
             XCTAssertFalse(example.title.isEmpty)
             XCTAssertFalse(example.description.isEmpty)
         }
     }
 
     func testColorsAndGradientsConceptInitialization() {
-        let concept = CategoryInitializer.colorsAndGradientsConcept
+        let concept = DataInitializer.colorsAndGradientsTopic
         XCTAssertEqual(concept.title, "Colors and Gradients")
         XCTAssertEqual(concept.examples.count, ColorsAndGradientsConcept.allCases.count)
 
         let firstExample = concept.examples.first
-        XCTAssertEqual(firstExample?.title, ColorsAndGradientsConcept.colorsExample.title)
-        XCTAssertEqual(firstExample?.description, ColorsAndGradientsConcept.colorsExample.description)
+        XCTAssertEqual(firstExample?.title, ColorsAndGradientsConcept.colorsConcept.title)
+        XCTAssertEqual(firstExample?.description, ColorsAndGradientsConcept.colorsConcept.description)
         
         for example in concept.examples {
             XCTAssertTrue(ColorsAndGradientsConcept.allCases.contains { $0.rawValue == example.type.id })
@@ -40,7 +40,7 @@ class DataInitializerTests: XCTestCase {
 class CategoriesInitializationTests: XCTestCase {
 
     func testCategoriesInitialization() {
-        let categories = CategoryInitializer.categories
+        let categories = DataInitializer.categories
         XCTAssertGreaterThan(categories.count, 0)
 
         for category in categories {

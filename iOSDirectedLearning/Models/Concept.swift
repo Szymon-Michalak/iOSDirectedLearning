@@ -1,19 +1,58 @@
 
 import SwiftUI
 
-struct Concept<T: ExampleType>: Identifiable {
+protocol ConceptType: Identifiable {
+    var id: String { get }
+    var title: String { get }
+    var description: String { get }
+    var complexity: Complexity { get }
+    func view() -> AnyView
+}
+
+struct Concept<T: ConceptType>: Identifiable {
     let id: UUID = .init()
-    let title: String
-    let examples: [Example<T>]
+    let type: T
+
+    var title: String {
+        type.title
+    }
+
+    var description: String {
+        type.description
+    }
+    
+    var complexity: Complexity {
+        type.complexity
+    }
+
+    func view() -> AnyView {
+        type.view()
+    }
 }
 
 struct AnyConcept: Identifiable {
-    let id: UUID = .init()
-    let title: String
-    let examples: [any ExampleType]
+    var innerExample: any ConceptType
 
-    init<T: ExampleType>(_ concept: Concept<T>) {
-        title = concept.title
-        examples = concept.examples.map { $0.type }
+    init(_ example: any ConceptType) {
+        innerExample = example
+    }
+
+    var id: String { innerExample.id }
+}
+
+enum Complexity {
+    case beginner
+    case intermediate
+    case advanced
+    
+    var color: Color {
+        switch self {
+        case .beginner:
+            return .green
+        case .intermediate:
+            return .orange
+        case .advanced:
+            return .red
+        }
     }
 }

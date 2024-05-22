@@ -1,29 +1,29 @@
 
 import SwiftUI
 
-struct ConceptView: View {
-    let concept: AnyConcept
-    let examples: [AnyExample]
+struct TopicView: View {
+    let topic: AnyTopic
+    let concepts: [AnyConcept]
 
-    init(concept: AnyConcept) {
-        self.concept = concept
-        examples = concept.examples.map { AnyExample($0) }
+    init(topic: AnyTopic) {
+        self.topic = topic
+        concepts = topic.examples.map { AnyConcept($0) }
     }
 
     var body: some View {
         List {
-            ForEach(examples, id: \.id) { example in
+            ForEach(concepts, id: \.id) { example in
                 NavigationLink(destination: example.innerExample.view()) {
                     ExampleRowView(example: example.innerExample)
                 }
             }
         }
-        .navigationTitle(concept.title)
+        .navigationTitle(topic.title)
     }
 }
 
 struct ExampleRowView: View {
-    var example: any ExampleType
+    var example: any ConceptType
 
     var body: some View {
         HStack {
@@ -43,5 +43,5 @@ struct ExampleRowView: View {
 }
 
 #Preview {
-    ConceptView(concept: CategoryInitializer.categories[0].concepts[0])
+    TopicView(topic: DataInitializer.categories[0].concepts[0])
 }

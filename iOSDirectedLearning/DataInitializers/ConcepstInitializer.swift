@@ -2,78 +2,78 @@
 import SwiftUI
 
 // MARK: - Text and Shapes
-enum TextAndShapesConcept: String, CaseIterable, ExampleType {
-    case textExample
-    case shapesExample
-    case maskExample
-    case customShapesExample
-    case customShapesWithArcsAndQuadCurves
-    case animateCustomShapesWithAnimateableData
+enum TextAndShapesTopic: String, CaseIterable, ConceptType {
+    case textConcept
+    case shapesConcept
+    case maskConcept
+    case customShapesConcept
+    case customShapesWithArcsAndQuadCurvesConcept
+    case animateCustomShapesWithAnimateableDataConcept
 
     var title: String {
         switch self {
-        case .textExample:
+        case .textConcept:
             return "Text"
-        case .shapesExample:
+        case .shapesConcept:
             return "Shapes"
-        case .maskExample:
+        case .maskConcept:
             return "Mask"
-        case .customShapesExample:
+        case .customShapesConcept:
             return "Custom Shapes"
-        case .customShapesWithArcsAndQuadCurves:
+        case .customShapesWithArcsAndQuadCurvesConcept:
             return "Arcs and Quad Curves"
-        case .animateCustomShapesWithAnimateableData:
+        case .animateCustomShapesWithAnimateableDataConcept:
             return "Animating Custom Shapes"
         }
     }
 
     var description: String {
         switch self {
-        case .textExample:
+        case .textConcept:
             return "A showcase of basic text modifiers"
-        case .shapesExample:
+        case .shapesConcept:
             return "Exploring built in shapes"
-        case .maskExample:
+        case .maskConcept:
             return "Applying mask with animation."
-        case .customShapesExample:
+        case .customShapesConcept:
             return "Custom Shapes"
-        case .customShapesWithArcsAndQuadCurves:
+        case .customShapesWithArcsAndQuadCurvesConcept:
             return "Arcs and Quad Curves"
-        case .animateCustomShapesWithAnimateableData:
+        case .animateCustomShapesWithAnimateableDataConcept:
             return "Animating Custom Shapes"
         }
     }
     
     var complexity: Complexity {
         switch self {
-        case .textExample:
+        case .textConcept:
             return .beginner
-        case .shapesExample:
+        case .shapesConcept:
             return .beginner
-        case .maskExample:
+        case .maskConcept:
             return .intermediate
-        case .customShapesExample:
+        case .customShapesConcept:
             return .beginner
-        case .customShapesWithArcsAndQuadCurves:
+        case .customShapesWithArcsAndQuadCurvesConcept:
             return .beginner
-        case .animateCustomShapesWithAnimateableData:
+        case .animateCustomShapesWithAnimateableDataConcept:
             return .beginner
         }
     }
 
     func view() -> AnyView {
         switch self {
-        case .textExample:
+        case .textConcept:
             return AnyView(TextExampleView())
-        case .shapesExample:
+        case .shapesConcept:
             return AnyView(ShapesExampleView())
-        case .maskExample:
+        case .maskConcept:
             return AnyView(MaskExampleView())
-        case .customShapesExample:
+        case .customShapesConcept:
             return AnyView(Text("Coming Soon"))
-        case .customShapesWithArcsAndQuadCurves:
+        case .customShapesWithArcsAndQuadCurvesConcept:
             return AnyView(Text("Coming Soon"))
-        case .animateCustomShapesWithAnimateableData:
+        case .animateCustomShapesWithAnimateableDataConcept:
             return AnyView(Text("Coming Soon"))
         }
     }
@@ -82,60 +82,60 @@ enum TextAndShapesConcept: String, CaseIterable, ExampleType {
 }
 
 // MARK: - Colors and Gradients
-enum ColorsAndGradientsConcept: String, CaseIterable, ExampleType {
-    case colorsExample
-    case gradientsExample
-    case dynamicColorsExample
-    case systemMaterialsAndBackgrounds
+enum ColorsAndGradientsConcept: String, CaseIterable, ConceptType {
+    case colorsConcept
+    case gradientsConcept
+    case dynamicColorsConcept
+    case systemMaterialsAndBackgroundsConcept
 
     var title: String {
         switch self {
-        case .colorsExample:
+        case .colorsConcept:
             return "Colors"
-        case .gradientsExample:
+        case .gradientsConcept:
             return "Gradients"
-        case .dynamicColorsExample:
+        case .dynamicColorsConcept:
             return "Dynamic Colors"
-        case .systemMaterialsAndBackgrounds:
+        case .systemMaterialsAndBackgroundsConcept:
             return "System Materials and Backgrounds"
         }
     }
 
     var description: String {
         switch self {
-        case .colorsExample:
+        case .colorsConcept:
             return "Colors"
-        case .gradientsExample:
+        case .gradientsConcept:
             return "Gradients"
-        case .dynamicColorsExample:
+        case .dynamicColorsConcept:
             return "Dynamic Colors"
-        case .systemMaterialsAndBackgrounds:
+        case .systemMaterialsAndBackgroundsConcept:
             return "System Materials and Backgrounds"
         }
     }
     
     var complexity: Complexity {
         switch self {
-        case .colorsExample:
+        case .colorsConcept:
             return .beginner
-        case .gradientsExample:
+        case .gradientsConcept:
             return .beginner
-        case .dynamicColorsExample:
+        case .dynamicColorsConcept:
             return .beginner
-        case .systemMaterialsAndBackgrounds:
+        case .systemMaterialsAndBackgroundsConcept:
             return .beginner
         }
     }
 
     func view() -> AnyView {
         switch self {
-        case .colorsExample:
+        case .colorsConcept:
             return AnyView(Text("Coming Soon"))
-        case .gradientsExample:
+        case .gradientsConcept:
             return AnyView(Text("Coming Soon"))
-        case .dynamicColorsExample:
+        case .dynamicColorsConcept:
             return AnyView(Text("Coming Soon"))
-        case .systemMaterialsAndBackgrounds:
+        case .systemMaterialsAndBackgroundsConcept:
             return AnyView(Text("Coming Soon"))
         }
     }

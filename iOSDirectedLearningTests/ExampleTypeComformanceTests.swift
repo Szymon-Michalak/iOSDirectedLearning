@@ -5,7 +5,7 @@ import XCTest
 extension TextAndShapesConceptTests {
 
     func testTextAndShapesConceptConformance() {
-        for concept in TextAndShapesConcept.allCases {
+        for concept in TextAndShapesTopic.allCases {
             XCTAssertFalse(concept.title.isEmpty)
             XCTAssertFalse(concept.description.isEmpty)
             XCTAssertNotNil(concept.view())
@@ -13,9 +13,9 @@ extension TextAndShapesConceptTests {
     }
     
     func testTextAndShapesConceptExamples() {
-            let concept = CategoryInitializer.textAndShapesConcept
+            let concept = DataInitializer.textAndShapesTopic
             for example in concept.examples {
-                XCTAssertTrue(TextAndShapesConcept.allCases.contains { $0.rawValue == example.type.id })
+                XCTAssertTrue(TextAndShapesTopic.allCases.contains { $0.rawValue == example.type.id })
             }
         }
 }
