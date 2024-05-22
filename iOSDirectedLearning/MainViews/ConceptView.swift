@@ -11,9 +11,13 @@ struct ConceptView: View {
     let content: AnyView
     
     var body: some View {
-        content
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
+        ScrollView {
+            content
+                .padding()
+        }
+        .scrollIndicators(.hidden)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         // TODO: - Add this item to a list of favorites.
