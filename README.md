@@ -30,6 +30,7 @@ Where applicable, each resource is tagged with length indicator:
   - [Text and Shapes](#text-and-shapes)
     - [Text](#text)
     - [Shapes](#shapes)
+    - [Mask](#mask)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
