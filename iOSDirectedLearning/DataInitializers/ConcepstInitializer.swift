@@ -34,7 +34,7 @@ enum TextAndShapesConcept: String, CaseIterable, ExampleType {
         case .shapesExample:
             return "Exploring built in shapes"
         case .maskExample:
-            return "Mask"
+            return "Applying mask with animation."
         case .customShapesExample:
             return "Custom Shapes"
         case .customShapesWithArcsAndQuadCurves:
@@ -51,7 +51,7 @@ enum TextAndShapesConcept: String, CaseIterable, ExampleType {
         case .shapesExample:
             return AnyView(ShapesExampleView())
         case .maskExample:
-            return AnyView(Text("Coming Soon"))
+            return AnyView(MaskExampleView())
         case .customShapesExample:
             return AnyView(Text("Coming Soon"))
         case .customShapesWithArcsAndQuadCurves:

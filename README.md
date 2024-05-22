@@ -66,6 +66,18 @@ Resources:
 
 - 🎥 🕰️ [Creating Shapes in SwiftUI | Bootcamp #3](https://www.youtube.com/watch?v=1dWHjdWgS5M)
 
+### Mask
+
+Applying mask with animation.
+
+Code Snippets:
+
+- 🟡 [Stars Rating](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/MaskExampleView.swift)
+
+Resources:
+
+- 🎥 🕰️ [How to use Mask in SwiftUI to create a 5-star rating button | Continued Learning #8](https://www.youtube.com/watch?v=pxx1ueCbnls&list=PLwvDm4VfkdpiagxAXCT33Rkwnc5IVhTar&index=9)
+
 <!-- TEMPLATE FOR NEW CONCEPTS
 
   ### NewConcept
