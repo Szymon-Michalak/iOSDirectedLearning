@@ -22,10 +22,6 @@ Where applicable, each resource is tagged with length indicator:
 - 🕰️ **Medium** (10-30 minutes)
 - ⏳ **Long** (More than 30 minutes)
 
----
-
-## Table Of Contents
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
