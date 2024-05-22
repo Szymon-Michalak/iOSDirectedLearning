@@ -31,16 +31,18 @@ Where applicable, each resource is tagged with length indicator:
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## SwiftUI
+# SwiftUI
+The SwiftUI section covers various concepts and techniques for building user interfaces with SwiftUI, Apple’s modern framework for creating UIs across all Apple platforms. Each topic is designed to help you understand and implement different aspects of SwiftUI in your projects.
 
-### Text and Shapes
+## Text and Shapes
+The Text and Shapes subsection provides examples and resources for working with text and shapes in SwiftUI.
 
-- **Text** 🟢
-  [Example Code](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/TextExampleView.swift)
+### Text
+Learn how to use and customize text in SwiftUI.
 
-  Learn how to use and customize text in SwiftUI.
-
+  Code Snippets:
+  - 🟢 [Simple Text Modifiers](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/TextExampleView.swift)
+  
   Resources:
-
-  - 🎥🕰️[Adding Text in SwiftUI | Bootcamp #2](https://www.youtube.com/watch?v=RKfkG01x79w)
-  - 📄⏱️[How to add spacing between letters in text](https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-spacing-between-letters-in-text)
+  - 🎥 🕰️ [Adding Text in SwiftUI | Bootcamp #2](https://www.youtube.com/watch?v=RKfkG01x79w)
+  - 📄 ⏱️ [How to add spacing between letters in text](https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-spacing-between-letters-in-text)
