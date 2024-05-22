@@ -28,6 +28,7 @@ Where applicable, each resource is tagged with length indicator:
 
 - [SwiftUI](#swiftui)
   - [Text and Shapes](#text-and-shapes)
+    - [Text](#text)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
