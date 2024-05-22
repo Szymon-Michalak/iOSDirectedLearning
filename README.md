@@ -90,6 +90,18 @@ Code Snippets:
 Resources:
 
 - 🎥 🕰️ [Custom Shapes in SwiftUI | Advanced Learning #5](https://www.youtube.com/watch?v=EHhgjOt_KFA&list=PLwvDm4Vfkdphc1LLLjCaEd87BEg07M97y&index=6)
+
+### Custom shapes with arcs and curves
+
+Drawing shapes using path with arcs and curves.
+
+Code Snippets:
+
+- 🔴 [Arcs and Curves](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/CustomShapesWithArcsAndQuadCurvesConceptView.swift)
+
+Resources:
+
+- 🎥 🕰️ [Custom shapes with Arcs and Quad Curves in SwiftUI | Advanced Learning #6](https://www.youtube.com/watch?v=UvQcNSjgydY&list=PLwvDm4Vfkdphc1LLLjCaEd87BEg07M97y&index=7)
 <!-- TEMPLATE FOR NEW CONCEPTS
 
   ### NewConcept
