@@ -1,9 +1,3 @@
-//
-//  ConceptView.swift
-//  iOS Directed Learning
-//
-//  Created by Szymon Michalak on 21/05/2024.
-//
 
 import SwiftUI
 
