@@ -40,7 +40,7 @@ enum TextAndShapesTopic: String, CaseIterable, ConceptType {
         case .customShapesWithArcsAndQuadCurvesConcept:
             return "Drawing custom shapes with arcs and curves."
         case .animateCustomShapesWithAnimateableDataConcept:
-            return "Animating Custom Shapes"
+            return "Animating custom shapes using animateable data."
         }
     }
     
@@ -57,7 +57,7 @@ enum TextAndShapesTopic: String, CaseIterable, ConceptType {
         case .customShapesWithArcsAndQuadCurvesConcept:
             return .advanced
         case .animateCustomShapesWithAnimateableDataConcept:
-            return .beginner
+            return .advanced
         }
     }
 
@@ -74,7 +74,7 @@ enum TextAndShapesTopic: String, CaseIterable, ConceptType {
         case .customShapesWithArcsAndQuadCurvesConcept:
             return AnyView(CustomShapesWithArcsAndQuadCurvesConceptView())
         case .animateCustomShapesWithAnimateableDataConcept:
-            return AnyView(Text("Coming Soon"))
+            return AnyView(AnimatingCustomShapesConceptView())
         }
     }
 

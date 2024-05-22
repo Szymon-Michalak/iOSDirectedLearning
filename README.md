@@ -24,6 +24,7 @@ Where applicable, each resource is tagged with length indicator:
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 **Table of Contents**
 
 - [SwiftUI](#swiftui)
@@ -102,6 +103,19 @@ Code Snippets:
 Resources:
 
 - 🎥 🕰️ [Custom shapes with Arcs and Quad Curves in SwiftUI | Advanced Learning #6](https://www.youtube.com/watch?v=UvQcNSjgydY&list=PLwvDm4Vfkdphc1LLLjCaEd87BEg07M97y&index=7)
+
+### Animating custom shapes
+
+Animating custom shapes using animateable data.
+
+Code Snippets:
+
+- 🔴 [Animating one rounded corner](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/AnimatingCustomShapesConceptView.swift)
+
+Resources:
+
+- 🎥 🕰️ [Animate Custom shapes with AnimateableData in SwiftUI | Advanced Learning #7](https://www.youtube.com/watch?v=kzrtiPbR3LQ&list=PLwvDm4Vfkdphc1LLLjCaEd87BEg07M97y&index=8)
+
 <!-- TEMPLATE FOR NEW CONCEPTS
 
   ### NewConcept
