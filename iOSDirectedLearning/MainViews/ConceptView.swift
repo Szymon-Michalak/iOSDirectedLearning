@@ -26,12 +26,18 @@ struct ExampleRowView: View {
     var example: any ExampleType
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(example.title)
-                .font(.headline)
-            Text(example.description)
-                .font(.subheadline)
-                .foregroundColor(.gray)
+        HStack {
+            VStack(alignment: .leading) {
+                Text(example.title)
+                    .font(.headline)
+                Text(example.description)
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+            }
+            Spacer()
+            Circle()
+                .fill(example.complexity.color)
+                .frame(width: 20, height: 20)
         }
     }
 }
