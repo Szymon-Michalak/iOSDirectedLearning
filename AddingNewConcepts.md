@@ -6,8 +6,10 @@ Adding new Concept consists of 2 steps:
 
 1. Creating a Concept Enum
 2. Adding the Concept to the CategoryInitializer
+3. Add View along with necessary files inside a specific Concept directory ConceptViews (or create one)
+4. Update README
 
-### Exact Steps:
+### Code Guide:
 
 1. **Create a New Enum Conforming to `ExampleType`**:
    - Define a new enum for the concept, ensuring it conforms to `ExampleType`.
@@ -77,7 +79,7 @@ Adding new Categories consists of 1 step:
 
 1. Adding the Category to the CategoryInitializer
 
-### 1. Add a New Category
+### Code Guide
 
 - Add the new category to the `CategoryInitializer` to ensure it’s included in the data initialization process.
 
