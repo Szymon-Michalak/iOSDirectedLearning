@@ -22,24 +22,28 @@ Where applicable, each resource is tagged with length indicator:
 - 🕰️ **Medium** (10-30 minutes)
 - ⏳ **Long** (More than 30 minutes)
 
----
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
 
-## Table Of Contents
+- [SwiftUI](#swiftui)
+  - [Text and Shapes](#text-and-shapes)
+    - [Text](#text)
 
-<!-- START doctoc -->
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-<!-- END doctoc -->
+# SwiftUI
+The SwiftUI section covers various concepts and techniques for building user interfaces with SwiftUI, Apple’s modern framework for creating UIs across all Apple platforms. Each topic is designed to help you understand and implement different aspects of SwiftUI in your projects.
 
-## SwiftUI
+## Text and Shapes
+The Text and Shapes subsection provides examples and resources for working with text and shapes in SwiftUI.
 
-### Text and Shapes
+### Text
+Learn how to use and customize text in SwiftUI.
 
-- **Text** 🟢
-  [Example Code](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/TextExampleView.swift)
-
-  Learn how to use and customize text in SwiftUI.
-
+  Code Snippets:
+  - 🟢 [Simple Text Modifiers](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/TextExampleView.swift)
+  
   Resources:
-
-  - 🎥🕰️[Adding Text in SwiftUI | Bootcamp #2](https://www.youtube.com/watch?v=RKfkG01x79w)
-  - 📄⏱️[How to add spacing between letters in text](https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-spacing-between-letters-in-text)
+  - 🎥 🕰️ [Adding Text in SwiftUI | Bootcamp #2](https://www.youtube.com/watch?v=RKfkG01x79w)
+  - 📄 ⏱️ [How to add spacing between letters in text](https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-spacing-between-letters-in-text)
