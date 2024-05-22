@@ -43,6 +43,23 @@ enum TextAndShapesConcept: String, CaseIterable, ExampleType {
             return "Animating Custom Shapes"
         }
     }
+    
+    var complexity: Complexity {
+        switch self {
+        case .textExample:
+            return .beginner
+        case .shapesExample:
+            return .beginner
+        case .maskExample:
+            return .intermediate
+        case .customShapesExample:
+            return .beginner
+        case .customShapesWithArcsAndQuadCurves:
+            return .beginner
+        case .animateCustomShapesWithAnimateableData:
+            return .beginner
+        }
+    }
 
     func view() -> AnyView {
         switch self {
@@ -94,6 +111,19 @@ enum ColorsAndGradientsConcept: String, CaseIterable, ExampleType {
             return "Dynamic Colors"
         case .systemMaterialsAndBackgrounds:
             return "System Materials and Backgrounds"
+        }
+    }
+    
+    var complexity: Complexity {
+        switch self {
+        case .colorsExample:
+            return .beginner
+        case .gradientsExample:
+            return .beginner
+        case .dynamicColorsExample:
+            return .beginner
+        case .systemMaterialsAndBackgrounds:
+            return .beginner
         }
     }
 
