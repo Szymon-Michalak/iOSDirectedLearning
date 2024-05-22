@@ -26,9 +26,14 @@ Where applicable, each resource is tagged with length indicator:
 
 ## Table Of Contents
 
-<!-- START doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
 
-<!-- END doctoc -->
+- [SwiftUI](#swiftui)
+  - [Text and Shapes](#text-and-shapes)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## SwiftUI
 
