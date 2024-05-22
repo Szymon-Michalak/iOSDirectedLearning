@@ -24,12 +24,12 @@ Where applicable, each resource is tagged with length indicator:
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 **Table of Contents**
 
 - [SwiftUI](#swiftui)
   - [Text and Shapes](#text-and-shapes)
     - [Text](#text)
+    - [Shapes](#shapes)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
