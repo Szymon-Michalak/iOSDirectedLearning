@@ -1,0 +1,6 @@
+project: iOSDirectedLearning.xcodeproj
+retain_public: true
+schemes:
+- iOSDirectedLearning
+targets:
+- iOSDirectedLearning
