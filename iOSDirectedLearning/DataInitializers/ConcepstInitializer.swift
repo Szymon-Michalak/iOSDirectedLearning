@@ -1,143 +1,94 @@
 import SwiftUI
 
-// MARK: - Text and Shapes
-enum TextAndShapesTopic: String, CaseIterable, ConceptType {
-    case textConcept
-    case shapesConcept
-    case maskConcept
-    case customShapesConcept
-    case customShapesWithArcsAndQuadCurvesConcept
-    case customShapesWithAnimateableDataConcept
+// MARK: - Text and Shapes Concepts
+struct TextAndShapesConcepts {
+    static let textConcept = Concept(
+        title: "Text",
+        description: "A showcase of basic text modifiers.",
+        complexity: .beginner,
+        view: AnyView(TextExampleView()),
+        githubLink: "https://github.com/Szymon-Michalak/iOS-Directed-Learning/blob/main/iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/TextExampleView.swift"
+    )
 
-    var title: String {
-        switch self {
-        case .textConcept:
-            return "Text"
-        case .shapesConcept:
-            return "Shapes"
-        case .maskConcept:
-            return "Mask"
-        case .customShapesConcept:
-            return "Custom Shapes"
-        case .customShapesWithArcsAndQuadCurvesConcept:
-            return "Arcs and Quad Curves"
-        case .customShapesWithAnimateableDataConcept:
-            return "Animating Custom Shapes"
-        }
-    }
+    static let shapesConcept = Concept(
+        title: "Shapes",
+        description: "Exploring built in shapes.",
+        complexity: .beginner,
+        view: AnyView(ShapesExampleView())
+    )
 
-    var description: String {
-        switch self {
-        case .textConcept:
-            return "A showcase of basic text modifiers."
-        case .shapesConcept:
-            return "Exploring built in shapes."
-        case .maskConcept:
-            return "Applying mask with animation."
-        case .customShapesConcept:
-            return "Drawing custom shapes with straight lines."
-        case .customShapesWithArcsAndQuadCurvesConcept:
-            return "Drawing custom shapes with arcs and curves."
-        case .customShapesWithAnimateableDataConcept:
-            return "Animating custom shapes using animateable data."
-        }
-    }
+    static let maskConcept = Concept(
+        title: "Mask",
+        description: "Applying mask with animation.",
+        complexity: .intermediate,
+        view: AnyView(MaskExampleView())
+    )
 
-    var complexity: Complexity {
-        switch self {
-        case .textConcept:
-            return .beginner
-        case .shapesConcept:
-            return .beginner
-        case .maskConcept:
-            return .intermediate
-        case .customShapesConcept:
-            return .advanced
-        case .customShapesWithArcsAndQuadCurvesConcept:
-            return .advanced
-        case .customShapesWithAnimateableDataConcept:
-            return .advanced
-        }
-    }
+    static let customShapesConcept = Concept(
+        title: "Custom Shapes",
+        description: "Drawing custom shapes with straight lines.",
+        complexity: .advanced,
+        view: AnyView(CustomShapesConceptView())
+    )
 
-    func view() -> AnyView {
-        switch self {
-        case .textConcept:
-            return AnyView(TextExampleView())
-        case .shapesConcept:
-            return AnyView(ShapesExampleView())
-        case .maskConcept:
-            return AnyView(MaskExampleView())
-        case .customShapesConcept:
-            return AnyView(CustomShapesConceptView())
-        case .customShapesWithArcsAndQuadCurvesConcept:
-            return AnyView(CustomShapesWithArcsAndQuadCurvesConceptView())
-        case .customShapesWithAnimateableDataConcept:
-            return AnyView(AnimatingCustomShapesConceptView())
-        }
-    }
+    static let customShapesWithArcsAndQuadCurvesConcept = Concept(
+        title: "Arcs and Quad Curves",
+        description: "Drawing custom shapes with arcs and curves.",
+        complexity: .advanced,
+        view: AnyView(CustomShapesWithArcsAndQuadCurvesConceptView())
+    )
 
-    var id: String { rawValue }
+    static let customShapesWithAnimateableDataConcept = Concept(
+        title: "Animating Custom Shapes",
+        description: "Animating custom shapes using animateable data.",
+        complexity: .advanced,
+        view: AnyView(AnimatingCustomShapesConceptView())
+    )
+
+    static let all: [Concept] = [
+        textConcept,
+        shapesConcept,
+        maskConcept,
+        customShapesConcept,
+        customShapesWithArcsAndQuadCurvesConcept,
+        customShapesWithAnimateableDataConcept
+    ]
 }
 
-// MARK: - Colors and Gradients
-enum ColorsAndGradientsConcept: String, CaseIterable, ConceptType {
-    case colorsConcept
-    case gradientsConcept
-    case dynamicColorsConcept
-    case systemMaterialsAndBackgroundsConcept
+// MARK: - Colors and Gradients Concepts
+struct ColorsAndGradientsConcepts {
+    static let colorsConcept = Concept(
+        title: "Colors",
+        description: "Colors",
+        complexity: .beginner,
+        view: AnyView(Text("Coming Soon"))
+    )
 
-    var title: String {
-        switch self {
-        case .colorsConcept:
-            return "Colors"
-        case .gradientsConcept:
-            return "Gradients"
-        case .dynamicColorsConcept:
-            return "Dynamic Colors"
-        case .systemMaterialsAndBackgroundsConcept:
-            return "System Materials and Backgrounds"
-        }
-    }
+    static let gradientsConcept = Concept(
+        title: "Gradients",
+        description: "Gradients",
+        complexity: .beginner,
+        view: AnyView(Text("Coming Soon"))
+    )
 
-    var description: String {
-        switch self {
-        case .colorsConcept:
-            return "Colors"
-        case .gradientsConcept:
-            return "Gradients"
-        case .dynamicColorsConcept:
-            return "Dynamic Colors"
-        case .systemMaterialsAndBackgroundsConcept:
-            return "System Materials and Backgrounds"
-        }
-    }
+    static let dynamicColorsConcept = Concept(
+        title: "Dynamic Colors",
+        description: "Dynamic Colors",
+        complexity: .beginner,
+        view: AnyView(Text("Coming Soon"))
+    )
 
-    var complexity: Complexity {
-        switch self {
-        case .colorsConcept:
-            return .beginner
-        case .gradientsConcept:
-            return .beginner
-        case .dynamicColorsConcept:
-            return .beginner
-        case .systemMaterialsAndBackgroundsConcept:
-            return .beginner
-        }
-    }
+    static let systemMaterialsAndBackgroundsConcept = Concept(
+        title: "System Materials and Backgrounds",
+        description: "System Materials and Backgrounds",
+        complexity: .beginner,
+        view: AnyView(Text("Coming Soon"))
+    )
 
-    func view() -> AnyView {
-        switch self {
-        case .colorsConcept:
-            return AnyView(Text("Coming Soon"))
-        case .gradientsConcept:
-            return AnyView(Text("Coming Soon"))
-        case .dynamicColorsConcept:
-            return AnyView(Text("Coming Soon"))
-        case .systemMaterialsAndBackgroundsConcept:
-            return AnyView(Text("Coming Soon"))
-        }
-    }
-
-    var id: String { rawValue }
+    static let all: [Concept] = [
+        colorsConcept,
+        gradientsConcept,
+        dynamicColorsConcept,
+        systemMaterialsAndBackgroundsConcept
+    ]
 }

@@ -1,44 +1,35 @@
 import SwiftUI
 
-protocol ConceptType: Identifiable {
-    var id: String { get }
+// MARK: - Concept
+protocol ConceptType {
+    var id: UUID { get }
     var title: String { get }
     var description: String { get }
     var complexity: Complexity { get }
-    func view() -> AnyView
+    var githubLink: String? { get }
+    var isFavorite: Bool { get set }
+    var view: AnyView { get }
 }
 
-struct Concept<T: ConceptType>: Identifiable {
-    let id: UUID = .init()
-    let type: T
+struct Concept: ConceptType, Identifiable {
+    var id: UUID = .init()
+    var title: String
+    var description: String
 
-    var title: String {
-        type.title
-    }
+    var complexity: Complexity
+    var isFavorite: Bool = false
 
-    var description: String {
-        type.description
-    }
+    var view: AnyView
 
-    var complexity: Complexity {
-        type.complexity
-    }
-
-    func view() -> AnyView {
-        type.view()
+    var githubLink: String?
+    var githubLinkURL: URL? {
+        guard let link = githubLink else { return nil }
+        guard let url = URL(string: link) else { return nil }
+        return url
     }
 }
 
-struct AnyConcept: Identifiable {
-    var innerExample: any ConceptType
-
-    init(_ example: any ConceptType) {
-        innerExample = example
-    }
-
-    var id: String { innerExample.id }
-}
-
+// MARK: - Enums
 enum Complexity {
     case beginner
     case intermediate

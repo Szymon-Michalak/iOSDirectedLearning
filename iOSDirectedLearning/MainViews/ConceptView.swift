@@ -8,47 +8,70 @@
 import SwiftUI
 
 struct ConceptView: View {
-    let content: AnyView
+
+    let concept: Concept
+    @State private var isFavorite: Bool
+
+    init(concept: Concept) {
+        self.concept = concept
+        self.isFavorite = concept.isFavorite
+    }
 
     var body: some View {
         ScrollView {
-            content
+            concept.view
                 .padding()
         }
-        .scrollIndicators(.hidden)
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        // TODO: - Add this item to a list of favorites.
-                    } label: {
+            .scrollIndicators(.hidden)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    toggleFavorite()
+                } label: {
+                    if isFavorite {
+                        Label("Remove from Favorites", systemImage: "heart.fill")
+                    } else {
                         Label("Add to Favorites", systemImage: "heart")
                     }
                 }
-                ToolbarItem(placement: .topBarTrailing) {
-                    Menu {
-                        Section("What would you like to do?") {
-                            Button {
-                                // TODO: - View Code on Github
-                            } label: {
+            }
+            ToolbarItem(placement: .topBarTrailing) {
+                Menu {
+                    Section("What would you like to do?") {
+                        if let githubLinkURL = concept.githubLinkURL {
+                            Link(destination: githubLinkURL) {
                                 Label("See code on Github", systemImage: "swift")
                             }
-                            Button {
-                                // TODO: - Add this item to a list of favorites.
-                            } label: {
+                        } else {
+                            Label("See code on Github", systemImage: "swift")
+                                .disabled(true)
+                        }
+
+                        Button {
+                            toggleFavorite()
+                        } label: {
+                            if isFavorite {
+                                Label("Remove from Favorites", systemImage: "heart.fill")
+                            } else {
                                 Label("Add to Favorites", systemImage: "heart")
                             }
                         }
-                    } label: {
-                        Label("Menu", systemImage: "ellipsis.circle")
                     }
+                } label: {
+                    Label("Menu", systemImage: "ellipsis.circle")
                 }
             }
+        }
+    }
+
+    func toggleFavorite() {
+        isFavorite.toggle()
     }
 }
 
 #Preview {
     NavigationStack {
-        ConceptView(content: AnyView(Text("lol")))
+        ConceptView(concept: TextAndShapesConcepts.all[0])
     }
 }

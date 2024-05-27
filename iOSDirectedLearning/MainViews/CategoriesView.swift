@@ -9,18 +9,18 @@ struct CategoriesView: View {
         NavigationStack {
             ScrollView(.horizontal) {
                 LazyHStack(spacing: 0) {
-                    ForEach(modelData.getRandomExamples, id: \.id) { example in
+                    ForEach(modelData.getRandomExamples, id: \.id) { concept in
                         ZStack {
                             RoundedRectangle(cornerRadius: 25)
-                                .fill(example.innerExample.complexity.color)
+                                .fill(concept.complexity.color)
                                 .padding(.horizontal, 5)
                                 .containerRelativeFrame(.horizontal)
                             VStack(alignment: .leading) {
-                                Text(example.innerExample.title)
+                                Text(concept.title)
                                     .font(.title2.bold())
                                     .lineLimit(3)
                                     .foregroundStyle(.white)
-                                Text(example.innerExample.description)
+                                Text(concept.description)
                                     .lineLimit(0)
                                     .foregroundStyle(.white)
                             }

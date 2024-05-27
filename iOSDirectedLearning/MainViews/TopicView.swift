@@ -1,19 +1,19 @@
 import SwiftUI
 
 struct TopicView: View {
-    let topic: AnyTopic
-    let concepts: [AnyConcept]
+    let topic: Topic
+    let concepts: [Concept]
 
-    init(topic: AnyTopic) {
+    init(topic: Topic) {
         self.topic = topic
-        concepts = topic.concepts.map { AnyConcept($0) }
+        concepts = topic.concepts
     }
 
     var body: some View {
         List {
-            ForEach(concepts, id: \.id) { example in
-                NavigationLink(destination: ConceptView(content: example.innerExample.view())) {
-                    ExampleRowView(example: example.innerExample)
+            ForEach(concepts, id: \.id) { concept in
+                NavigationLink(destination: ConceptView(concept: concept)) {
+                    ConceptRowView(concept: concept)
                 }
             }
         }
@@ -21,21 +21,21 @@ struct TopicView: View {
     }
 }
 
-struct ExampleRowView: View {
-    var example: any ConceptType
+struct ConceptRowView: View {
+    var concept: any ConceptType
 
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text(example.title)
+                Text(concept.title)
                     .font(.headline)
-                Text(example.description)
+                Text(concept.description)
                     .font(.subheadline)
                     .foregroundColor(.gray)
             }
             Spacer()
             Circle()
-                .fill(example.complexity.color)
+                .fill(concept.complexity.color)
                 .frame(width: 20, height: 20)
         }
     }
