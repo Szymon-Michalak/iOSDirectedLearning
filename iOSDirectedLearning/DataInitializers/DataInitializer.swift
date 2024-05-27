@@ -5,9 +5,9 @@ enum DataInitializer {
     static let categories: [Category] = [
         Category(title: "UI Components", topics: [
             AnyTopic(textAndShapesTopic),
-            AnyTopic(colorsAndGradientsTopic),
+            AnyTopic(colorsAndGradientsTopic)
             // Add other concepts...
-        ]),
+        ])
         // Add other categories...
     ]
 }

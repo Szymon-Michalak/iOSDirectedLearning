@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct Topic<T: ConceptType>: Identifiable {

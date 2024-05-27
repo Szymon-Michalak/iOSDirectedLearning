@@ -1,14 +1,10 @@
-
-
 import SwiftUI
 
 struct CategoriesView: View {
     @EnvironmentObject var modelData: ModelData
 
     @State private var colors: [Color] = [.red, .blue, .green, .yellow]
-    
-    
-    
+
     var body: some View {
         NavigationStack {
             ScrollView(.horizontal) {
@@ -46,7 +42,7 @@ struct CategoriesView: View {
             .frame(height: 220)
             .safeAreaPadding(.vertical, 15)
             .safeAreaPadding(.horizontal, 25)
-            
+
             List(modelData.categories) { category in
                 NavigationLink(destination: CategoryView(category: category)) {
                     Text(category.title)
@@ -64,17 +60,6 @@ struct CategoriesView: View {
     CategoriesView()
         .environmentObject(ModelData())
 }
-
-
-
-//
-//  Home.swift
-//  AnimatedPageIndicator
-//
-//  Created by Balaji Venkatesh on 01/01/24.
-//
-
-import SwiftUI
 
 struct Home: View {
     /// View Properties
@@ -108,12 +93,12 @@ struct Home: View {
             .frame(height: 220)
             .safeAreaPadding(.vertical, 15)
             .safeAreaPadding(.horizontal, 25)
-            
+
             List {
                 Section("Options") {
                     Toggle("Opacity Effect", isOn: $opacityEffect)
                     Toggle("Clip Edges", isOn: $clipEdges)
-                    
+
                     Button("Add Item") {
                         colors.append(.purple)
                     }

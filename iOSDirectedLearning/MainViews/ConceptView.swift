@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ConceptView: View {
     let content: AnyView
-    
+
     var body: some View {
         ScrollView {
             content

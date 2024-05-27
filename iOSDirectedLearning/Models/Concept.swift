@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 protocol ConceptType: Identifiable {
@@ -20,7 +19,7 @@ struct Concept<T: ConceptType>: Identifiable {
     var description: String {
         type.description
     }
-    
+
     var complexity: Complexity {
         type.complexity
     }
@@ -44,7 +43,7 @@ enum Complexity {
     case beginner
     case intermediate
     case advanced
-    
+
     var color: Color {
         switch self {
         case .beginner:

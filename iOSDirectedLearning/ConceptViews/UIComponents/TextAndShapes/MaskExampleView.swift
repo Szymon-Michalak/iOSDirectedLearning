@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct MaskExampleView: View {
-    
+
     @State var rating: Int = 3
-    
+
     var body: some View {
         ZStack {
             starsView
@@ -19,7 +19,7 @@ struct MaskExampleView: View {
                 )
         }
     }
-    
+
     private var overlayView: some View {
         GeometryReader { geo in
             ZStack {
@@ -29,7 +29,7 @@ struct MaskExampleView: View {
             }
             .allowsHitTesting(false)
     }
-        
+
     }
     private var starsView: some View {
         HStack {
@@ -38,7 +38,7 @@ struct MaskExampleView: View {
                     .font(.largeTitle)
                     .foregroundColor(.gray)
                     .onTapGesture {
-                        withAnimation(.easeInOut){
+                        withAnimation(.easeInOut) {
                             rating = index
                         }
                     }

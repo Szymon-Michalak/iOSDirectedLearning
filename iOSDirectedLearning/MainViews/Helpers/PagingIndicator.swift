@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct PagingIndicator: View {
@@ -6,7 +5,7 @@ struct PagingIndicator: View {
     var inActiveTint: Color = .primary.opacity(0.15)
     var opacityEffect: Bool = false
     var clipEdges: Bool = false
-    
+
     var body: some View {
         GeometryReader {
             /// Entire View Size for Calculating Pages
@@ -26,20 +25,34 @@ struct PagingIndicator: View {
                 /// Indicator Width's (Current & Upcoming)
                 let currentPageWidth = 18 - (indicatorProgress * 18)
                 let nextPageWidth = indicatorProgress * 18
-                
+
                 HStack(spacing: 10) {
                     ForEach(0..<totalPages, id: \.self) { index in
                         Capsule()
                             .fill(.clear)
-                            .frame(width: 8 + (activeIndex == index ? currentPageWidth : nextIndex == index ? nextPageWidth : 0), height: 8)
+                            .frame(
+                                width: 8 + (
+                                    activeIndex == index
+                                    ? currentPageWidth
+                                    : nextIndex == index
+                                    ? nextPageWidth
+                                    : 0),
+                                height: 8)
                             .overlay {
                                 ZStack {
                                     Capsule()
                                         .fill(inActiveTint)
-                                    
+
                                     Capsule()
                                         .fill(activeTint)
-                                        .opacity(opacityEffect ? activeIndex == index ? 1 - indicatorProgress : nextIndex == index ? indicatorProgress : 0 : 1)
+                                        .opacity(
+                                            opacityEffect
+                                            ? activeIndex == index
+                                            ? 1 - indicatorProgress
+                                            : nextIndex == index
+                                            ? indicatorProgress
+                                            : 0
+                                            : 1)
                                 }
                             }
                     }

@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 // MARK: - Text and Shapes
@@ -8,7 +7,7 @@ enum TextAndShapesTopic: String, CaseIterable, ConceptType {
     case maskConcept
     case customShapesConcept
     case customShapesWithArcsAndQuadCurvesConcept
-    case animateCustomShapesWithAnimateableDataConcept
+    case customShapesWithAnimateableDataConcept
 
     var title: String {
         switch self {
@@ -22,7 +21,7 @@ enum TextAndShapesTopic: String, CaseIterable, ConceptType {
             return "Custom Shapes"
         case .customShapesWithArcsAndQuadCurvesConcept:
             return "Arcs and Quad Curves"
-        case .animateCustomShapesWithAnimateableDataConcept:
+        case .customShapesWithAnimateableDataConcept:
             return "Animating Custom Shapes"
         }
     }
@@ -39,11 +38,11 @@ enum TextAndShapesTopic: String, CaseIterable, ConceptType {
             return "Drawing custom shapes with straight lines."
         case .customShapesWithArcsAndQuadCurvesConcept:
             return "Drawing custom shapes with arcs and curves."
-        case .animateCustomShapesWithAnimateableDataConcept:
+        case .customShapesWithAnimateableDataConcept:
             return "Animating custom shapes using animateable data."
         }
     }
-    
+
     var complexity: Complexity {
         switch self {
         case .textConcept:
@@ -56,7 +55,7 @@ enum TextAndShapesTopic: String, CaseIterable, ConceptType {
             return .advanced
         case .customShapesWithArcsAndQuadCurvesConcept:
             return .advanced
-        case .animateCustomShapesWithAnimateableDataConcept:
+        case .customShapesWithAnimateableDataConcept:
             return .advanced
         }
     }
@@ -73,7 +72,7 @@ enum TextAndShapesTopic: String, CaseIterable, ConceptType {
             return AnyView(CustomShapesConceptView())
         case .customShapesWithArcsAndQuadCurvesConcept:
             return AnyView(CustomShapesWithArcsAndQuadCurvesConceptView())
-        case .animateCustomShapesWithAnimateableDataConcept:
+        case .customShapesWithAnimateableDataConcept:
             return AnyView(AnimatingCustomShapesConceptView())
         }
     }
@@ -113,7 +112,7 @@ enum ColorsAndGradientsConcept: String, CaseIterable, ConceptType {
             return "System Materials and Backgrounds"
         }
     }
-    
+
     var complexity: Complexity {
         switch self {
         case .colorsConcept:
