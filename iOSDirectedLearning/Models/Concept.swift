@@ -7,7 +7,6 @@ protocol ConceptType {
     var description: String { get }
     var complexity: Complexity { get }
     var githubLink: String? { get }
-    var isFavorite: Bool { get set }
     var view: AnyView { get }
 }
 
@@ -17,7 +16,6 @@ struct Concept: ConceptType, Identifiable {
     var description: String
 
     var complexity: Complexity
-    var isFavorite: Bool = false
 
     var view: AnyView
 

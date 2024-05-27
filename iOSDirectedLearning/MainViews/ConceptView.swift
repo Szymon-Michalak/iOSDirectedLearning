@@ -9,17 +9,15 @@ import SwiftUI
 
 struct ConceptView: View {
 
-    let concept: Concept
-    @State private var isFavorite: Bool
+    @StateObject private var vm: ConceptViewModel
 
     init(concept: Concept) {
-        self.concept = concept
-        self.isFavorite = concept.isFavorite
+        _vm = StateObject(wrappedValue: ConceptViewModel(concept: concept))
     }
 
     var body: some View {
         ScrollView {
-            concept.view
+            vm.concept.view
                 .padding()
         }
             .scrollIndicators(.hidden)
@@ -27,9 +25,9 @@ struct ConceptView: View {
             .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    toggleFavorite()
+                    vm.toggleFavorite()
                 } label: {
-                    if isFavorite {
+                    if vm.isFavorite {
                         Label("Remove from Favorites", systemImage: "heart.fill")
                     } else {
                         Label("Add to Favorites", systemImage: "heart")
@@ -39,7 +37,7 @@ struct ConceptView: View {
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {
                     Section("What would you like to do?") {
-                        if let githubLinkURL = concept.githubLinkURL {
+                        if let githubLinkURL = vm.concept.githubLinkURL {
                             Link(destination: githubLinkURL) {
                                 Label("See code on Github", systemImage: "swift")
                             }
@@ -49,9 +47,9 @@ struct ConceptView: View {
                         }
 
                         Button {
-                            toggleFavorite()
+                            vm.toggleFavorite()
                         } label: {
-                            if isFavorite {
+                            if vm.isFavorite {
                                 Label("Remove from Favorites", systemImage: "heart.fill")
                             } else {
                                 Label("Add to Favorites", systemImage: "heart")
@@ -63,10 +61,6 @@ struct ConceptView: View {
                 }
             }
         }
-    }
-
-    func toggleFavorite() {
-        isFavorite.toggle()
     }
 }
 
