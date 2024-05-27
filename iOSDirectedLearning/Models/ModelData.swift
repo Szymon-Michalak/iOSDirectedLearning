@@ -9,4 +9,6 @@ final class ModelData: ObservableObject {
         .flatMap { $0 }
         .map { $0.concepts }
         .flatMap { $0 }
+        .shuffled()
+        .prefix(5)
 }
