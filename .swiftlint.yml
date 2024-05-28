@@ -1,2 +1,22 @@
 disabled_rules:
   - todo
+  - private_over_fileprivate
+
+type_body_length:
+  - 400 # warning
+  - 500 # error
+
+file_length:
+  warning: 600
+  error: 1200
+
+type_name:
+  min_length: 4
+  max_length:
+    warning: 50
+    error: 60
+
+identifier_name:
+  max_length:
+    warning: 50
+    error: 60
