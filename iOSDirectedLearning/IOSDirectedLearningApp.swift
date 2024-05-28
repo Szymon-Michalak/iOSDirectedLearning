@@ -4,7 +4,7 @@ import SwiftUI
 struct IOSDirectedLearningApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            MainHomeView()
                 .environmentObject(ModelData())
         }
     }
