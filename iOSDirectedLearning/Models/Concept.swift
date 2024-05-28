@@ -39,7 +39,7 @@ struct Concept: ConceptType, Identifiable {
 }
 
 // MARK: - Enums
-enum Complexity {
+enum Complexity: String {
     case beginner
     case intermediate
     case advanced

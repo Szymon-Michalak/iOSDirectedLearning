@@ -19,17 +19,33 @@ struct HeroPagingView: View {
                             .fill(concept.complexity.color.gradient)
                             .padding(.horizontal, 5)
                             .containerRelativeFrame(.horizontal)
-                        VStack(alignment: .leading) {
+                        HStack {
+                            Spacer()
+                            VStack {
+                                ribbon(for: concept.complexity)
+                                Spacer()
+                            }
+                        }
+                        .mask {
+                            RoundedRectangle(cornerRadius: 25)
+                            .padding(.horizontal, 5)
+                            .containerRelativeFrame(.horizontal)
+                        }
+                        VStack(alignment: .center) {
                             Text(concept.title)
                                 .font(.title2.bold())
                                 .lineLimit(3)
                                 .foregroundStyle(.white)
+                                .multilineTextAlignment(.center)
                             Text(concept.description)
-                                .lineLimit(0)
+                                .lineLimit(3)
                                 .foregroundStyle(.white)
+                                .multilineTextAlignment(.center)
                         }
+//                        .frame(width: .infinity)
+                        .padding()
+                        .padding()
                         .containerRelativeFrame(.horizontal)
-                        .padding(.horizontal, 5)
                     }
                 }
             }
@@ -41,6 +57,20 @@ struct HeroPagingView: View {
                 )
             }
         }
+    }
+
+    func ribbon(for complexity: Complexity) -> some View {
+        ZStack {
+            Text(complexity.rawValue)
+                .foregroundStyle(complexity.color)
+                .frame(maxWidth: .infinity)
+                .padding(5)
+                .background(.white)
+        }
+        .frame(width: 200, height: 200)
+//        .background(.pink)
+        .rotationEffect(Angle(degrees: 45))
+        .offset(x: 60, y: -60)
     }
 }
 
