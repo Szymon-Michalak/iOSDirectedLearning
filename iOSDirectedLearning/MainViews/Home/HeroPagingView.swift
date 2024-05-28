@@ -15,7 +15,7 @@ struct HeroPagingView: View {
             LazyHStack(spacing: 0) {
                 ForEach(modelData.getRandomExamples, id: \.id) { concept in
                     ZStack {
-                        RoundedRectangle(cornerRadius: 25)
+                        RoundedRectangle(cornerRadius: 15)
                             .fill(concept.complexity.color.gradient)
                             .padding(.horizontal, 5)
                             .containerRelativeFrame(.horizontal)

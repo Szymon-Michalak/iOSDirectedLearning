@@ -27,14 +27,15 @@ struct RowView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 50)
-//                    .clipShape(RoundedRectangle(cornerRadius: 15))
-                    .clipShape(Circle())
+                    .clipShape(RoundedRectangle(cornerRadius: 15))
             }
         }
         .frame(maxWidth: .infinity)
-        .padding()
+        .padding(.horizontal)
+        .padding(.vertical, 10)
         .background(.thickMaterial)
-        .clipShape(RoundedRectangle(cornerRadius: 25))
+        .clipShape(RoundedRectangle(cornerRadius: 15))
+        .padding(.horizontal, 25)
     }
 }
 

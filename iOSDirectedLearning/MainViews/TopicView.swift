@@ -27,12 +27,9 @@ struct ConceptRowView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(concept.title)
-                    .font(.headline)
-                    .foregroundStyle(.primary)
+                    .primaryText()
                 Text(concept.description)
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
-                    .multilineTextAlignment(.leading)
+                    .secondaryText()
             }
             Spacer()
             Circle()

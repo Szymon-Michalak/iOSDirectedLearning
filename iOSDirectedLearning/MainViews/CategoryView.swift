@@ -6,11 +6,7 @@ struct CategoryView: View {
     var body: some View {
         ZStack {
             Rectangle()
-                .fill(LinearGradient(gradient:
-                                        Gradient(colors: [
-                                            .purple.opacity(0.15),
-                                            .purple.opacity(0.55)
-                                        ]), startPoint: .top, endPoint: .bottom))
+                .fill(DomainStyles.backgroundGradient)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .ignoresSafeArea()
             if category.topics.isEmpty {
@@ -43,7 +39,6 @@ struct CategoryView: View {
                             }
                         }
                     }
-                    //                .padding()
                 }
             }
         }
