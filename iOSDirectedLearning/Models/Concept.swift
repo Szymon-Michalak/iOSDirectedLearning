@@ -6,7 +6,7 @@ protocol ConceptType {
     var title: String { get }
     var description: String { get }
     var complexity: Complexity { get }
-    var githubLink: String? { get }
+    var githubPath: String? { get }
     var view: AnyView { get }
 }
 
@@ -19,11 +19,21 @@ struct Concept: ConceptType, Identifiable {
 
     var view: AnyView
 
-    var githubLink: String?
+    var githubPath: String?
     var githubLinkURL: URL? {
-        guard let link = githubLink else { return nil }
+        guard let path = githubPath else { return nil }
+
+        let link = "https://github.com/Szymon-Michalak/iOS-Directed-Learning/blob/main/iOSDirectedLearning/ConceptViews/\(path)"
         guard let url = URL(string: link) else { return nil }
         return url
+    }
+
+    init(title: String, description: String, complexity: Complexity, view: some View, githubPath: String? = nil) {
+        self.title = title
+        self.description = description
+        self.complexity = complexity
+        self.view = AnyView(view)
+        self.githubPath = githubPath
     }
 }
 

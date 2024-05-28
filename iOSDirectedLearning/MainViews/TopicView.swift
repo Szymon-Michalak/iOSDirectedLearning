@@ -42,5 +42,5 @@ struct ConceptRowView: View {
 }
 
 #Preview {
-    TopicView(topic: DataInitializer.categories[0].topics[0])
+    TopicView(topic: CategoryInitializer.categories[0].topics[0])
 }

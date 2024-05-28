@@ -13,5 +13,5 @@ struct CategoryView: View {
 }
 
 #Preview {
-    CategoryView(category: DataInitializer.categories[0])
+    CategoryView(category: CategoryInitializer.categories[0])
 }

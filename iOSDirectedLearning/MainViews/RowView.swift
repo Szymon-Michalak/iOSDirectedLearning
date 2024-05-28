@@ -30,8 +30,8 @@ struct RowView: View {
 
 #Preview {
     VStack {
-        RowView(content: DataInitializer.categories[0])
-        RowView(content: DataInitializer.categories[0])
-        RowView(content: DataInitializer.categories[0])
+        RowView(content: CategoryInitializer.categories[0])
+        RowView(content: CategoryInitializer.categories[0])
+        RowView(content: CategoryInitializer.categories[0])
     }
 }

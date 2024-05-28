@@ -9,15 +9,15 @@ import SwiftUI
 
 struct ConceptView: View {
 
-    @StateObject private var vm: ConceptViewModel
+    @StateObject private var viewModel: ConceptViewModel
 
     init(concept: Concept) {
-        _vm = StateObject(wrappedValue: ConceptViewModel(concept: concept))
+        _viewModel = StateObject(wrappedValue: ConceptViewModel(concept: concept))
     }
 
     var body: some View {
         ScrollView {
-            vm.concept.view
+            viewModel.concept.view
                 .padding()
         }
             .scrollIndicators(.hidden)
@@ -25,9 +25,9 @@ struct ConceptView: View {
             .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    vm.toggleFavorite()
+                    viewModel.toggleFavorite()
                 } label: {
-                    if vm.isFavorite {
+                    if viewModel.isFavorite {
                         Label("Remove from Favorites", systemImage: "heart.fill")
                     } else {
                         Label("Add to Favorites", systemImage: "heart")
@@ -37,7 +37,7 @@ struct ConceptView: View {
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {
                     Section("What would you like to do?") {
-                        if let githubLinkURL = vm.concept.githubLinkURL {
+                        if let githubLinkURL = viewModel.concept.githubLinkURL {
                             Link(destination: githubLinkURL) {
                                 Label("See code on Github", systemImage: "swift")
                             }
@@ -47,9 +47,9 @@ struct ConceptView: View {
                         }
 
                         Button {
-                            vm.toggleFavorite()
+                            viewModel.toggleFavorite()
                         } label: {
-                            if vm.isFavorite {
+                            if viewModel.isFavorite {
                                 Label("Remove from Favorites", systemImage: "heart.fill")
                             } else {
                                 Label("Add to Favorites", systemImage: "heart")
