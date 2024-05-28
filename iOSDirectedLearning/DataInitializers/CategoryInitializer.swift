@@ -5,6 +5,7 @@ enum CategoryInitializer {
     static let categories: [Category] = [
         Category(title: "SwiftUI",
                  description: "Declarative UI",
+                 image: "category/swiftui",
                  topics: [
                     textAndShapesTopic,
                     colorsAndGradientsTopic,
@@ -18,11 +19,13 @@ enum CategoryInitializer {
         ]),
         Category(title: "UIKit",
                  description: "Imperative UI",
+                 image: "category/uikit",
                  topics: [
 
         ]),
         Category(title: "Apple Frameworks",
                  description: "Apple Frameworks",
+                 image: "category/apple",
                  topics: [
                     coreDataTopic,
                     combineTopic,
@@ -30,6 +33,7 @@ enum CategoryInitializer {
         ]),
         Category(title: "Swift Packages",
                  description: "Swift Packages",
+                 image: "category/swift",
                  topics: [
                     firebaseTopic,
                     packageManagerTopic,
@@ -39,6 +43,7 @@ enum CategoryInitializer {
         ]),
         Category(title: "Software Development",
                  description: "Common concepts from iOS",
+                 image: "category/ios",
                  topics: [
                     accessibilityTopic,
                     gitAndSourceControlTopic,

@@ -10,4 +10,5 @@ import Foundation
 protocol ListPresentable {
     var title: String { get }
     var description: String { get }
+    var image: String { get }
 }

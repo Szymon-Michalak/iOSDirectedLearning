@@ -20,6 +20,11 @@ struct RowView: View {
                     .foregroundColor(.gray)
             }
             Spacer()
+            Image(content.image)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 50)
+                .clipShape(RoundedRectangle(cornerRadius: 15))
         }
         .frame(maxWidth: .infinity)
         .padding()
@@ -31,7 +36,7 @@ struct RowView: View {
 #Preview {
     VStack {
         RowView(content: CategoryInitializer.categories[0])
-        RowView(content: CategoryInitializer.categories[0])
-        RowView(content: CategoryInitializer.categories[0])
+        RowView(content: CategoryInitializer.categories[1])
+        RowView(content: CategoryInitializer.categories[2])
     }
 }
