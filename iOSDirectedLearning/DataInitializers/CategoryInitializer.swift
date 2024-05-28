@@ -22,7 +22,7 @@ enum CategoryInitializer {
 
         ]),
         Category(title: "Apple Frameworks",
-                 description: "Concepts from all around the developer",
+                 description: "Apple Frameworks",
                  topics: [
                     coreDataTopic,
                     combineTopic,
