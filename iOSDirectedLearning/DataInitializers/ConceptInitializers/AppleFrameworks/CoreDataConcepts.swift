@@ -8,9 +8,17 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let coreDataTopic: Topic = Topic(
+        title: "Core Data",
+        concepts: CoreDataConcepts.all)
+
+}
+
 // MARK: - Core Data Concepts
-struct CoreDataConcepts {
-    static let FetchRequestConcept = Concept(
+fileprivate struct CoreDataConcepts {
+    static let fetchRequestConcept = Concept(
         title: "Core Data with @FetchRequest",
         description: "Core Data with @FetchRequest",
         complexity: .intermediate,
@@ -24,7 +32,14 @@ struct CoreDataConcepts {
         view: Text("Coming Soon")
     )
 
-    static let RelationshipsPredicatesAndDeleteRulesConcept = Concept(
+    static let relationshipsPredicatesConcept = Concept(
+        title: "Core Data Relationships, Predicates, and Delete Rules",
+        description: "Core Data Relationships, Predicates, and Delete Rules",
+        complexity: .intermediate,
+        view: Text("Coming Soon")
+    )
+
+    static let deleteRulesConcept = Concept(
         title: "Core Data Relationships, Predicates, and Delete Rules",
         description: "Core Data Relationships, Predicates, and Delete Rules",
         complexity: .intermediate,
@@ -32,8 +47,9 @@ struct CoreDataConcepts {
     )
 
     static let all: [Concept] = [
-        FetchRequestConcept,
+        fetchRequestConcept,
         coreDataWithMVVMConcept,
-        RelationshipsPredicatesAndDeleteRulesConcept
+        relationshipsPredicatesConcept,
+        deleteRulesConcept
     ]
 }

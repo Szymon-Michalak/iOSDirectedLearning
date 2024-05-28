@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let interactionsTopic: Topic = Topic(
+        title: "Interactions",
+        concepts: InteractionsConcepts.all)
+
+}
+
 // MARK: - Interactions Concepts
-struct InteractionsConcepts {
+fileprivate struct InteractionsConcepts {
     static let tapGestureConcept = Concept(
         title: "Tap Gesture",
         description: "Tap Gesture",

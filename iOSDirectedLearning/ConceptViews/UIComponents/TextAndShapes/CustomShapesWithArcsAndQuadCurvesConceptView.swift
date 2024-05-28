@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CustomShapesWithArcsAndQuadCurvesConceptView: View {
+struct ArcsAndQuadCurvesConceptView: View {
     var body: some View {
         VStack(spacing: 40) {
                 ArcSample()
@@ -81,5 +81,5 @@ struct CustomShapesWithArcsAndQuadCurvesConceptView: View {
 }
 
 #Preview {
-    CustomShapesWithArcsAndQuadCurvesConceptView()
+    ArcsAndQuadCurvesConceptView()
 }

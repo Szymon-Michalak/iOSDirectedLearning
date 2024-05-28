@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+    static let textAndShapesTopic: Topic = Topic(
+        title: "Text and Shapes",
+        concepts: TextAndShapesConcepts.all)
+
+}
+
 // MARK: - Text and Shapes Concepts
-struct TextAndShapesConcepts {
+
+fileprivate struct TextAndShapesConcepts {
     static let textConcept = Concept(
         title: "Text",
         description: "A showcase of basic text modifiers.",
@@ -39,11 +47,11 @@ struct TextAndShapesConcepts {
         view: CustomShapesConceptView()
     )
 
-    static let customShapesWithArcsAndQuadCurvesConcept = Concept(
+    static let arcsAndQuadCurvesConcept = Concept(
         title: "Arcs and Quad Curves",
         description: "Drawing custom shapes with arcs and curves.",
         complexity: .advanced,
-        view: CustomShapesWithArcsAndQuadCurvesConceptView()
+        view: ArcsAndQuadCurvesConceptView()
     )
 
     static let customShapesWithAnimateableDataConcept = Concept(
@@ -58,7 +66,7 @@ struct TextAndShapesConcepts {
         shapesConcept,
         maskConcept,
         customShapesConcept,
-        customShapesWithArcsAndQuadCurvesConcept,
+        arcsAndQuadCurvesConcept,
         customShapesWithAnimateableDataConcept
     ]
 }

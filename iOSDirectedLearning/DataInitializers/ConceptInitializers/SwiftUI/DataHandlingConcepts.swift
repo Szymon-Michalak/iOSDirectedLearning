@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let dataHandlingTopic: Topic = Topic(
+        title: "Data Handling",
+        concepts: DataHandlingConcepts.all)
+
+}
+
 // MARK: - Data Handling Concepts
-struct DataHandlingConcepts {
+fileprivate struct DataHandlingConcepts {
     static let textFieldConcept = Concept(
         title: "TextField",
         description: "TextField",

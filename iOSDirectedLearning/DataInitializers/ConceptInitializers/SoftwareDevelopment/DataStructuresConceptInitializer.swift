@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let dataStructuresAndAlgorithmsTopic: Topic = Topic(
+        title: "Data Structures and Algorithms",
+        concepts: DataStructuresAndAlgorithmsConcepts.all)
+
+}
+
 // MARK: - Data Structures and Algorithms Concepts
-struct DataStructuresAndAlgorithmsConcepts {
+fileprivate struct DataStructuresAndAlgorithmsConcepts {
     static let arraysConcept = Concept(
         title: "Arrays",
         description: "Arrays",
@@ -17,7 +25,7 @@ struct DataStructuresAndAlgorithmsConcepts {
         view: Text("Coming Soon")
     )
 
-    static let arraysSuperCommonInterviewQuestionsConcept = Concept(
+    static let arraysInterviewQuestionsConcept = Concept(
         title: "Super common interview questions",
         description: "Super common interview questions",
         complexity: .beginner,
@@ -31,7 +39,7 @@ struct DataStructuresAndAlgorithmsConcepts {
         view: Text("Coming Soon")
     )
 
-    static let linkedListsSuperCommonInterviewQuestionsConcept = Concept(
+    static let linkedListsInterviewQuestionsConcept = Concept(
         title: "Super common linked list interview questions",
         description: "Super common linked list interview questions",
         complexity: .beginner,
@@ -80,7 +88,7 @@ struct DataStructuresAndAlgorithmsConcepts {
         view: Text("Coming Soon")
     )
 
-    static let stacksSuperCommonInterviewQuestionsConcept = Concept(
+    static let stacksInterviewQuestionsConcept = Concept(
         title: "Super common stack interview questions",
         description: "Super common stack interview questions",
         complexity: .beginner,
@@ -129,7 +137,7 @@ struct DataStructuresAndAlgorithmsConcepts {
         view: Text("Coming Soon")
     )
 
-    static let binarySearchTreeSuperCommonInterviewQuestionsConcept = Concept(
+    static let binarySearchTreeInterviewQuestionsConcept = Concept(
         title: "Super common binary search tree interview questions",
         description: "Super common binary search tree interview questions",
         complexity: .beginner,
@@ -206,7 +214,7 @@ struct DataStructuresAndAlgorithmsConcepts {
         view: Text("Coming Soon")
     )
 
-    static let graphsSuperCommonInterviewQuestionsConcept = Concept(
+    static let graphsInterviewQuestionsConcept = Concept(
         title: "Super common graph question",
         description: "Super common graph question",
         complexity: .beginner,

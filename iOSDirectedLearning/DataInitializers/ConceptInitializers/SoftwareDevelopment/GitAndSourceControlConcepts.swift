@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let gitAndSourceControlTopic: Topic = Topic(
+        title: "Git & Source Control",
+        concepts: GitAndSourceControlConcepts.all)
+
+}
+
 // MARK: - Git & Source Control Concepts
-struct GitAndSourceControlConcepts {
+fileprivate struct GitAndSourceControlConcepts {
     static let setupGitConcept = Concept(
         title: "Setup",
         description: "Setup",

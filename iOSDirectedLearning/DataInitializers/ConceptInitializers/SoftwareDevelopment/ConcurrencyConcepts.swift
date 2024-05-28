@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let concurrencyTopic: Topic = Topic(
+        title: "Concurrency",
+        concepts: ConcurrencyConcepts.all)
+
+}
+
 // MARK: - Concurrency Concepts
-struct ConcurrencyConcepts {
+fileprivate struct ConcurrencyConcepts {
     static let swiftConcurrencyConcept = Concept(
         title: "Swift Concurrency (Async, Await, Actors)",
         description: "Swift Concurrency (Async, Await, Actors)",
@@ -101,7 +109,7 @@ struct ConcurrencyConcepts {
         view: Text("Coming Soon")
     )
 
-    static let strongWeakReferencesWithAsyncAwaitConcept = Concept(
+    static let referencesWithAsyncAwaitConcept = Concept(
         title: "Strong & Weak References with Async/Await",
         description: "Strong & Weak References with Async/Await",
         complexity: .beginner,
@@ -136,7 +144,7 @@ struct ConcurrencyConcepts {
         globalActorsConcept,
         sendableProtocolConcept,
         asyncPublisherConcept,
-        strongWeakReferencesWithAsyncAwaitConcept,
+        referencesWithAsyncAwaitConcept,
         mvvmWithAsyncAwaitConcept,
         asyncStreamConcept
     ]

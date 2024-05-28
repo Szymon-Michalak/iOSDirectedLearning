@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let advancedTechniquesTopic: Topic = Topic(
+        title: "Advanced Techniques",
+        concepts: AdvancedTechniquesConcepts.all)
+
+}
+
 // MARK: - Advanced Techniques Concepts
-struct AdvancedTechniquesConcepts {
+fileprivate struct AdvancedTechniquesConcepts {
     static let onAppearAndOnDisappearConcept = Concept(
         title: "onAppear and onDisappear",
         description: "onAppear and onDisappear",

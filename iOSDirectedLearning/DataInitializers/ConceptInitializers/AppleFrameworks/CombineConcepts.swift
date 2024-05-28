@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
-// MARK: - ombine Concepts
-struct CombineConcepts {
+extension CategoryInitializer {
+
+    static let combineTopic: Topic = Topic(
+        title: "Combine",
+        concepts: CombineConcepts.all)
+
+}
+
+// MARK: - Combine Concepts
+fileprivate struct CombineConcepts {
     static let timerAndOnReceiveConcept = Concept(
         title: "Timer and onReceive",
         description: "Timer and onReceive",

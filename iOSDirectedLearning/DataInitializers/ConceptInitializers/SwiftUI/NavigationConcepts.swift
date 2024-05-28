@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let navigationTopic: Topic = Topic(
+        title: "Navigation",
+        concepts: NavigationConcepts.all)
+
+}
+
 // MARK: - Navigation Concepts
-struct NavigationConcepts {
+fileprivate struct NavigationConcepts {
     static let navigationViewAndNavigationLinkConcept = Concept(
         title: "NavigationView and NavigationLink",
         description: "NavigationView and NavigationLink",

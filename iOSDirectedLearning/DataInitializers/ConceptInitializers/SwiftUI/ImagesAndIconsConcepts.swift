@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let imagesAndIconsTopic: Topic = Topic(
+        title: "Images and Icons",
+        concepts: ImagesAndIconsConcepts.all)
+
+}
+
 // MARK: - Images and Icons Concepts
-struct ImagesAndIconsConcepts {
+fileprivate struct ImagesAndIconsConcepts {
     static let iconsAndSymbolsConcept = Concept(
         title: "Icons and Symbols",
         description: "Icons and Symbols",

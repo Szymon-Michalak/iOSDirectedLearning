@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let fileManagementTopic: Topic = Topic(
+        title: "File Management",
+        concepts: FileManagementConcepts.all)
+
+}
+
 // MARK: - File Management Concepts
-struct FileManagementConcepts {
+fileprivate struct FileManagementConcepts {
     static let saveDataAndImagesToFileManagerConcept = Concept(
         title: "Save Data and Images to FileManager",
         description: "Save Data and Images to FileManager",

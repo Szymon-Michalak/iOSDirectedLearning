@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let layoutsAndFramesTopic: Topic = Topic(
+        title: "Layouts and Frames",
+        concepts: LayoutsAndFramesConcepts.all)
+
+}
+
 // MARK: - Layouts and Frames Concepts
-struct LayoutsAndFramesConcepts {
+fileprivate struct LayoutsAndFramesConcepts {
     static let framesAndAlignmentsConcept = Concept(
         title: "Frames and Alignments",
         description: "Frames and Alignments",

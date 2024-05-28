@@ -66,6 +66,6 @@ struct ConceptView: View {
 
 #Preview {
     NavigationStack {
-        ConceptView(concept: TextAndShapesConcepts.all[0])
+        ConceptView(concept: CategoryInitializer.textAndShapesTopic.concepts[0])
     }
 }

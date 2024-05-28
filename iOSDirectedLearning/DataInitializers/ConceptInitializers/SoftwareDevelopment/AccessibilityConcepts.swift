@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let accessibilityTopic: Topic = Topic(
+        title: "Accessibility",
+        concepts: AccessibilityConcepts.all)
+
+}
+
 // MARK: - Accessibility Concepts
-struct AccessibilityConcepts {
+fileprivate struct AccessibilityConcepts {
     static let dynamicTextConcept = Concept(
         title: "Dynamic Text",
         description: "Dynamic Text",

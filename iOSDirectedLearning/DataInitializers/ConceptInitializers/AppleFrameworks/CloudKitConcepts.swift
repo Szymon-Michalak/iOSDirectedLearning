@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let cloudKitTopic: Topic = Topic(
+        title: "CloudKit",
+        concepts: CloudKitConcepts.all)
+
+}
+
 // MARK: - CloudKit Concepts
-struct CloudKitConcepts {
+fileprivate struct CloudKitConcepts {
     static let setupCloudKitAndGetUserInfoConcept = Concept(
         title: "Setup CloudKit and Get User Info",
         description: "Setup CloudKit and Get User Info",

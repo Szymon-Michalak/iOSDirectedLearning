@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let networkingTopic: Topic = Topic(
+        title: "Networking",
+        concepts: NetworkingConcepts.all)
+
+}
+
 // MARK: - Networking Concepts
-struct NetworkingConcepts {
+fileprivate struct NetworkingConcepts {
     static let downloadJSONWithURLSessionConcept = Concept(
         title: "Download JSON with URLSession and Escaping Closures",
         description: "Download JSON with URLSession and Escaping Closures",

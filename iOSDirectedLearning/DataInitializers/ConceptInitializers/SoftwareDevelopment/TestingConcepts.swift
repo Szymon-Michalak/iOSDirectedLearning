@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let testingTopic: Topic = Topic(
+        title: "Testing",
+        concepts: TestingConcepts.all)
+
+}
+
 // MARK: - Testing Concepts
-struct TestingConcepts {
+fileprivate struct TestingConcepts {
     static let unitTestingConcept = Concept(
         title: "Unit Testing",
         description: "Unit Testing",

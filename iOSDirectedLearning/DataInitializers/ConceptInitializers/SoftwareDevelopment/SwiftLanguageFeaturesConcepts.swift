@@ -8,8 +8,16 @@
 import Foundation
 import SwiftUI
 
+extension CategoryInitializer {
+
+    static let swiftLanguageFeaturesTopic: Topic = Topic(
+        title: "Swift Language Features",
+        concepts: SwiftLanguageFeaturesConcepts.all)
+
+}
+
 // MARK: - Swift Language Features Concepts
-struct SwiftLanguageFeaturesConcepts {
+fileprivate struct SwiftLanguageFeaturesConcepts {
     static let typealiasConcept = Concept(
         title: "Typealias",
         description: "Typealias",
