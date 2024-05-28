@@ -15,20 +15,25 @@ struct RowView: View {
             VStack(alignment: .leading) {
                 Text(content.title)
                     .font(.headline)
-                Text(content.description)
-                    .font(.subheadline)
-                    .foregroundColor(.gray)
+                if let description = content.description {
+                    Text(description)
+                        .font(.subheadline)
+                        .foregroundColor(.gray)
+                }
             }
             Spacer()
-            Image(content.image)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 50)
-                .clipShape(RoundedRectangle(cornerRadius: 15))
+            if let image = content.image {
+                Image(image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 50)
+//                    .clipShape(RoundedRectangle(cornerRadius: 15))
+                    .clipShape(Circle())
+            }
         }
         .frame(maxWidth: .infinity)
         .padding()
-        .background(.ultraThinMaterial)
+        .background(.thickMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 25))
     }
 }
