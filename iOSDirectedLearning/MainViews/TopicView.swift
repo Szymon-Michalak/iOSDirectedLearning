@@ -10,13 +10,12 @@ struct TopicView: View {
     }
 
     var body: some View {
-        List {
-            ForEach(concepts, id: \.id) { concept in
-                NavigationLink(destination: ConceptView(concept: concept)) {
-                    ConceptRowView(concept: concept)
-                }
+        ForEach(concepts, id: \.id) { concept in
+            NavigationLink(destination: ConceptView(concept: concept)) {
+                ConceptRowView(concept: concept)
             }
         }
+        .padding(.horizontal)
         .navigationTitle(topic.title)
     }
 }
@@ -29,6 +28,7 @@ struct ConceptRowView: View {
             VStack(alignment: .leading) {
                 Text(concept.title)
                     .font(.headline)
+                    .foregroundStyle(.primary)
                 Text(concept.description)
                     .font(.subheadline)
                     .foregroundColor(.gray)
@@ -39,6 +39,9 @@ struct ConceptRowView: View {
                 .fill(concept.complexity.color)
                 .frame(width: 20, height: 20)
         }
+        .padding()
+        .background(.thinMaterial)
+        .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }
 
