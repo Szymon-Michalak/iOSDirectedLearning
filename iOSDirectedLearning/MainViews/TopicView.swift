@@ -32,6 +32,7 @@ struct ConceptRowView: View {
                 Text(concept.description)
                     .font(.subheadline)
                     .foregroundColor(.gray)
+                    .multilineTextAlignment(.leading)
             }
             Spacer()
             Circle()
