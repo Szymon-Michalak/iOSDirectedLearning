@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MaskExampleView: View {
+struct MaskConceptView: View {
 
     @State var rating: Int = 3
 
@@ -48,5 +48,5 @@ struct MaskExampleView: View {
 }
 
 #Preview {
-    MaskExampleView()
+    MaskConceptView()
 }

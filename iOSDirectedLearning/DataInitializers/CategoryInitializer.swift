@@ -7,8 +7,7 @@ enum CategoryInitializer {
                  description: "Declarative UI",
                  image: "category/swiftui",
                  topics: [
-                    textAndShapesTopic,
-                    colorsAndGradientsTopic,
+                    colorsAndShapesTopic,
                     imagesAndIconsTopic,
                     layoutsAndFramesTopic,
                     modifiersAndControlsTopic,

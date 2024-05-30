@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct TextExampleView: View {
+struct TextConceptView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             Text("Default Text")
@@ -50,5 +50,5 @@ struct TextExampleView: View {
 }
 
 #Preview {
-    TextExampleView()
+    TextConceptView()
 }
