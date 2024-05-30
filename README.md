@@ -41,9 +41,9 @@ Where applicable, each resource is tagged with length indicator:
 
 The SwiftUI section covers various concepts and techniques for building user interfaces with SwiftUI, Apple’s modern framework for creating UIs across all Apple platforms. Each topic is designed to help you understand and implement different aspects of SwiftUI in your projects.
 
-## Text and Shapes
+## Colors and Shapes
 
-The Text and Shapes subsection provides examples and resources for working with text and shapes in SwiftUI.
+The Colors and Shapes subsection provides examples and resources for working with text and shapes in SwiftUI.
 
 ### Text
 
@@ -51,7 +51,7 @@ Learn how to use and customize text in SwiftUI.
 
 Code Snippets:
 
-- 🟢 [Simple Text Modifiers](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/TextExampleView.swift)
+- 🟢 [Styling Text](iOSDirectedLearning/ConceptViews/UIComponents/ColorsAndShapes/TextConceptView.swift)
 
 Resources:
 
@@ -60,13 +60,21 @@ Resources:
 - 📄 ⏱️ [Customize the style of links embedded in Text](https://nilcoalescing.com/blog/CustomizeTheStyleOfLinksEmbeddedInText/)
 - 📄 ⏱️ [Markdown in SwiftUI Text views](https://nilcoalescing.com/blog/MarkdownInSwiftUITextViews/)
 
+### Colors
+
+Learn how to use colors, gradients and materials in SwiftUI.
+
+Code Snippets:
+
+- 🟢 [Using Colors](iOSDirectedLearning/ConceptViews/UIComponents/ColorsAndShapes/TextConceptView.swift)
+
 ### Shapes
 
 Learn how to use and customize built in shapes in SwiftUI.
 
 Code Snippets:
 
-- 🟢 [Simple Shapes](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/ShapesExampleView.swift)
+- 🟢 [Simple Shapes](iOSDirectedLearning/ConceptViews/UIComponents/ColorsAndShapes/ShapesConceptView.swift)
 
 Resources:
 
@@ -78,7 +86,7 @@ Applying mask with animation.
 
 Code Snippets:
 
-- 🟡 [Stars Rating](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/MaskExampleView.swift)
+- 🟡 [Stars Rating](iOSDirectedLearning/ConceptViews/UIComponents/ColorsAndShapes/MaskConceptView.swift)
 
 Resources:
 
@@ -90,7 +98,7 @@ Drawing custom shapes using path with lines.
 
 Code Snippets:
 
-- 🔴 [Custom Shapes](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/CustomShapesConceptView.swift)
+- 🔴 [Custom Shapes](iOSDirectedLearning/ConceptViews/UIComponents/ColorsAndShapes/CustomShapesConceptView.swift)
 
 Resources:
 
@@ -102,7 +110,7 @@ Drawing shapes using path with arcs and curves.
 
 Code Snippets:
 
-- 🔴 [Arcs and Curves](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/CustomShapesWithArcsAndQuadCurvesConceptView.swift)
+- 🔴 [Arcs and Curves](iOSDirectedLearning/ConceptViews/UIComponents/ColorsAndShapes/CustomShapesWithArcsAndQuadCurvesConceptView.swift)
 
 Resources:
 
@@ -114,7 +122,7 @@ Animating custom shapes using animateable data.
 
 Code Snippets:
 
-- 🔴 [Animating one rounded corner](iOSDirectedLearning/ConceptViews/UIComponents/TextAndShapes/AnimatingCustomShapesConceptView.swift)
+- 🔴 [Animating one rounded corner](iOSDirectedLearning/ConceptViews/UIComponents/ColorsAndShapes/AnimatingCustomShapesConceptView.swift)
 
 Resources:
 
