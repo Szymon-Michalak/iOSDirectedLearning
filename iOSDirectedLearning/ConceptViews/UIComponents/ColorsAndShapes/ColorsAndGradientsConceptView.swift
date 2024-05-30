@@ -26,6 +26,7 @@ struct ColorsAndGradientsConceptView: View {
 #Preview {
     ColorsAndGradientsConceptView()
 }
+
 struct BasicColorView: View {
 
     let red: Color = .red
@@ -34,10 +35,10 @@ struct BasicColorView: View {
 
     var body: some View {
         VStackWithHeaderView(title: "Basic Colors", description: "You can use predefined colors.") {
-            LazyVGrid(columns: Columns.threeColumnLayout) {
-                            LabeledCircleView(text: "Red", style: red)
-                            LabeledCircleView(text: "Green", style: green)
-                            LabeledCircleView(text: "Blue", style: blue)
+            LazyVGrid(columns: ConceptStyle.Columns.threeColumnLayout) {
+                            LabeledCircleView(labelText: "Red", style: red)
+                            LabeledCircleView(labelText: "Green", style: green)
+                            LabeledCircleView(labelText: "Blue", style: blue)
                         }
         }
     }
@@ -51,10 +52,10 @@ struct SystemColorView: View {
 
     var body: some View {
         VStackWithHeaderView(title: "System Colors", description: "You can use system colors.") {
-            LazyVGrid(columns: Columns.threeColumnLayout) {
-                LabeledCircleView(text: "Primary", style: primary)
-                LabeledCircleView(text: "Secondary", style: secondary)
-                LabeledCircleView(text: "Accent", style: accentColor)
+            LazyVGrid(columns: ConceptStyle.Columns.threeColumnLayout) {
+                LabeledCircleView(labelText: "Primary", style: primary)
+                LabeledCircleView(labelText: "Secondary", style: secondary)
+                LabeledCircleView(labelText: "Accent", style: accentColor)
             }
         }
     }
@@ -66,10 +67,10 @@ struct CustomColorView: View {
     let customBlue: Color = Color(hex: "#3498db")
     var body: some View {
         VStackWithHeaderView(title: "Custom Colors", description: "You can use custom colors.") {
-            LazyVGrid(columns: Columns.twoColumnLayout) {
-                LabeledCircleView(text: "From RGB", style: customRed)
+            LazyVGrid(columns: ConceptStyle.Columns.twoColumnLayout) {
+                LabeledCircleView(labelText: "From RGB", style: customRed)
                 LabeledCircleView(
-                    text:
+                    labelText:
                         """
                         From Hex
                         (using extension)
@@ -125,10 +126,10 @@ struct GradientView: View {
 
     var body: some View {
         VStackWithHeaderView(title: "Gradients", description: "You create your own gradients.") {
-            LazyVGrid(columns: Columns.threeColumnLayout) {
-                LabeledCircleView(text: "Linear", style: linearGradient)
-                LabeledCircleView(text: "Radial", style: radialGradient)
-                LabeledCircleView(text: "Angular", style: angularGradient)
+            LazyVGrid(columns: ConceptStyle.Columns.threeColumnLayout) {
+                LabeledCircleView(labelText: "Linear", style: linearGradient)
+                LabeledCircleView(labelText: "Radial", style: radialGradient)
+                LabeledCircleView(labelText: "Angular", style: angularGradient)
             }
         }
     }
@@ -142,10 +143,10 @@ struct MaterialView: View {
 
     var body: some View {
         VStackWithHeaderView(title: "Materials", description: "Predefined semi-translusent materials") {
-            LazyVGrid(columns: Columns.threeColumnLayout) {
-                LabeledCircleView(text: "Regular", style: regularMaterial)
-                LabeledCircleView(text: "Ultra Thin", style: ultraThinMaterial)
-                LabeledCircleView(text: "Thick", style: thickMaterial)
+            LazyVGrid(columns: ConceptStyle.Columns.threeColumnLayout) {
+                LabeledCircleView(labelText: "Regular", style: regularMaterial)
+                LabeledCircleView(labelText: "Ultra Thin", style: ultraThinMaterial)
+                LabeledCircleView(labelText: "Thick", style: thickMaterial)
             }
         }
     }
@@ -158,40 +159,14 @@ struct ConditionalColorView: View {
 
     var body: some View {
         VStackWithHeaderView(title: "Conditional Colors", description: "You can use conditional colors.") {
-            LazyVGrid(columns: Columns.twoColumnLayout) {
-                LabeledCircleView(text: "Based on Theme", style: colorScheme == .dark ? .white : .black)
+            LazyVGrid(columns: ConceptStyle.Columns.twoColumnLayout) {
+                LabeledCircleView(labelText: "Based on Theme", style: colorScheme == .dark ? .white : .black)
 
-                LabeledCircleView(text: "Tap to change", style: isActive ? Color.green : Color.red)
+                LabeledCircleView(labelText: "Tap to change", style: isActive ? Color.green : Color.red)
                     .onTapGesture {
                         isActive.toggle()
                     }
             }
         }
     }
-}
-
-struct LabeledCircleView<S: ShapeStyle>: View {
-    let text: String
-    let style: S
-
-    var body: some View {
-        VStack {
-            Circle()
-                .fill(style)
-                .frame(width: 50, height: 50)
-            Text(text)
-                .multilineTextAlignment(.center)
-        }
-    }
-}
-
-struct Columns {
-    static let threeColumnLayout = [
-        GridItem(.flexible(), spacing: 20, alignment: .top),
-        GridItem(.flexible(), spacing: 20, alignment: .top),
-        GridItem(.flexible(), spacing: 20, alignment: .top)]
-
-    static let twoColumnLayout = [
-        GridItem(.flexible(), spacing: 20, alignment: .top),
-        GridItem(.flexible(), spacing: 20, alignment: .top)]
 }
