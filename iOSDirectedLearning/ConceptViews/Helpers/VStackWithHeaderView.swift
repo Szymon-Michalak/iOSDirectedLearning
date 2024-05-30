@@ -23,6 +23,8 @@ struct VStackWithHeaderView<Content: View>: View {
                 .clipShape(RoundedRectangle(cornerRadius: 10))
             Text(description ?? "")
             content()
+                .padding(.horizontal, ConceptStyle.Padding.large)
+                .padding(.vertical, ConceptStyle.Padding.small)
         }
     }
 }
