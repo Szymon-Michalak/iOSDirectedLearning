@@ -29,7 +29,7 @@ struct CategoryView: View {
                 ScrollView {
                     LazyVStack(alignment: .leading, pinnedViews: .sectionHeaders) {
                         ForEach(category.topics) { topic in
-                            Section(header: SectionHeaderView(title: topic.title)) {
+                            Section(header: CategoryHeaderView(title: topic.title)) {
                                 ForEach(topic.concepts) { concept in
                                     NavigationLink(destination: ConceptView(concept: concept)) {
                                         ConceptRowView(concept: concept)
@@ -49,7 +49,7 @@ struct CategoryView: View {
     CategoryView(category: CategoryInitializer.categories[0])
 }
 
-struct SectionHeaderView: View {
+struct CategoryHeaderView: View {
     var title: String
 
     var body: some View {
