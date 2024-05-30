@@ -22,7 +22,7 @@ struct Concept: ConceptType, Identifiable {
     var githubPath: String?
     var githubLinkURL: URL? {
         guard let path = githubPath else { return nil }
-        let basePath = "https://github.com/Szymon-Michalak/iOS-Directed-Learning/blob/main"
+        let basePath = "https://github.com/Szymon-Michalak/iOS-Directed-Learning/blob/main/"
         let repositoryPath = "iOSDirectedLearning/ConceptViews/"
         let link = "\(basePath)\(repositoryPath)\(path)"
         guard let url = URL(string: link) else { return nil }
