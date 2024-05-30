@@ -56,7 +56,9 @@ Code Snippets:
 Resources:
 
 - 🎥 🕰️ [Adding Text in SwiftUI | Bootcamp #2](https://www.youtube.com/watch?v=RKfkG01x79w)
-- 📄 ⏱️ [How to add spacing between letters in text](https://www.hackingwithswift.com/quick-start/swiftui/how-to-add-spacing-between-letters-in-text)
+- 📄 ⏱️ [Text modifiers in SwiftUI](https://nilcoalescing.com/blog/TextModifiersInSwiftUI/)
+- 📄 ⏱️ [Customize the style of links embedded in Text](https://nilcoalescing.com/blog/CustomizeTheStyleOfLinksEmbeddedInText/)
+- 📄 ⏱️ [Markdown in SwiftUI Text views](https://nilcoalescing.com/blog/MarkdownInSwiftUITextViews/)
 
 ### Shapes
 
