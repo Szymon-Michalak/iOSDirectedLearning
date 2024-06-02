@@ -42,8 +42,57 @@ Additional tags:
 
 END OF TEMPLATE FOR NEW RESOURCES -->
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [iOS Development Blogs](#ios-development-blogs)
+  - [🖊️ **Holy Swift**](#-holy-swift)
+  - [🖊️ **The.Swift.Dev.**](#-theswiftdev)
+  - [🖊️ **Fatbobman's Blog**](#-fatbobmans-blog)
+  - [🖊️ **Donny Wals**](#-donny-wals)
+  - [🖊️ **Swift by Sundell**](#-swift-by-sundell)
+- [Tutorials](#tutorials)
+  - [🎥 **Stewart Lynch**](#-stewart-lynch)
+  - [🎥 **Flawless Code**](#-flawless-code)
+  - [🎥 **Brian Advent**](#-brian-advent)
+  - [🎥 **Building iOS Apps with Swift, TDD & Clean Architecture | Professional iOS Engineering Series**](#-building-ios-apps-with-swift-tdd--clean-architecture--professional-ios-engineering-series)
+- [UIKit](#uikit)
+  - [🎓 **The Swift Arcade Professional iOS Development Course**](#-the-swift-arcade-professional-ios-development-course)
+- [Core Graphics & Animation](#core-graphics--animation)
+  - [🎓 **CALayer Tutorial for iOS: Getting Started**](#-calayer-tutorial-for-ios-getting-started)
+- [APIs](#apis)
+  - [🛠️ **RapidAPI**](#-rapidapi)
+  - [🛠️ **Reqres - A hosted REST-API for front-end testing**](#-reqres---a-hosted-rest-api-for-front-end-testing)
+  - [🛠️ **Mocky**](#-mocky)
+- [Reference](#reference)
+  - [📄 **Swiftly - Swift 5.7 references**](#-swiftly---swift-57-references)
+  - [📄 **iOS Ref**](#-ios-ref)
+- [Continuous Integration & Automation](#continuous-integration--automation)
+  - [🖊️ **Danger Swift**](#-danger-swift)
+- [Swift Development](#swift-development)
+  - [🛠️ **Swift AST Explorer**](#-swift-ast-explorer)
+- [Data Structures & Algorithms](#data-structures--algorithms)
+  - [🎓 **The Swift Arcade Data Structures and Algorithms Bootcamp**](#-the-swift-arcade-data-structures-and-algorithms-bootcamp)
+- [Xcode](#xcode)
+  - [💻 **RocketSim - Enhancing the Xcode Simulators**](#-rocketsim---enhancing-the-xcode-simulators)
+- [UIKit](#uikit-1)
+  - [🖊️ **Point-Free**](#-point-free)
+  - [📂 **Awesome iOS Interview Repository**](#-awesome-ios-interview-repository)
+- [Data Structures](#data-structures)
+  - [📂 **Swift Algorithm Club**](#-swift-algorithm-club)
+  - [📂 **Design Patterns-In-Swift Repository**](#-design-patterns-in-swift-repository)
+  - [📂 **SwiftUI Deliberate Practice Repository**](#-swiftui-deliberate-practice-repository)
+  - [🖊️ **Refactoring.Guru - Design Patterns in Swift**](#-refactoringguru---design-patterns-in-swift)
+- [Lists](#lists)
+  - [🖊️ **Best resources for Advanced iOS Developer (Swift)**](#-best-resources-for-advanced-ios-developer-swift)
+  - [🎥 **Apple Developer Videos**](#-apple-developer-videos)
+- [Guides](#guides)
+  - [🖊️ **Awesome Swift**](#-awesome-swift)
+- [SwiftUI](#swiftui)
+  - [🎥 **Kavsoft YouTube Channel**](#-kavsoft-youtube-channel)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ---
 
