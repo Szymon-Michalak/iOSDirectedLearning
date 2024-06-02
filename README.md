@@ -27,8 +27,9 @@ Where applicable, each resource is tagged with length indicator:
 **Table of Contents**
 
 - [SwiftUI](#swiftui)
-  - [Text and Shapes](#text-and-shapes)
+  - [Colors and Shapes](#colors-and-shapes)
     - [Text](#text)
+    - [Colors](#colors)
     - [Shapes](#shapes)
     - [Mask](#mask)
     - [Custom shapes with straight lines](#custom-shapes-with-straight-lines)
