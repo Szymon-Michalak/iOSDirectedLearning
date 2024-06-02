@@ -4,7 +4,8 @@ jobs:
   generateTOC:
     name: TOC Generator
     runs-on: ubuntu-latest
-    TARGET_PATHS: README.MD,iOSResourcesList.md
     steps:
       - uses: technote-space/toc-generator@v4.3.1
+        with: 
+          TARGET_PATHS: README.md,iOSResourcesList.md
             
