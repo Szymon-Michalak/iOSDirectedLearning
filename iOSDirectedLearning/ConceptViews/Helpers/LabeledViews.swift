@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LabeledViewBuilder<Content: View>: View {
+struct LabeledAnyContentView<Content: View>: View {
     let labelText: String
     @ViewBuilder var content: () -> Content
 
@@ -26,7 +26,7 @@ struct LabeledCircleView<S: ShapeStyle>: View {
     let style: S
 
     var body: some View {
-        LabeledViewBuilder(labelText: labelText) {
+        LabeledAnyContentView(labelText: labelText) {
             Circle()
                 .fill(style)
                 .frame(width: 50, height: 50)
@@ -41,7 +41,7 @@ struct LabeledButtonView<S: ShapeStyle>: View {
     let style: S
 
     var body: some View {
-        LabeledViewBuilder(labelText: labelText) {
+        LabeledAnyContentView(labelText: labelText) {
             Button(action: action) {
                 Text(buttonText)
             }
@@ -55,7 +55,7 @@ struct LabeledTextView<Content: View>: View {
     @ViewBuilder let content: () -> Content
 
     var body: some View {
-        LabeledViewBuilder(labelText: labelText) {
+        LabeledAnyContentView(labelText: labelText) {
             content()
                 .frame(maxWidth: .infinity)
                 .padding(ConceptStyle.Padding.large)

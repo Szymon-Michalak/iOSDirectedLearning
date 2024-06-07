@@ -6,6 +6,7 @@ struct IOSDirectedLearningApp: App {
         WindowGroup {
             MainHomeView()
                 .environmentObject(ModelData())
+                .preferredColorScheme(.dark)
         }
     }
 }

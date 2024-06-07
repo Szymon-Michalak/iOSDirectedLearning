@@ -37,7 +37,7 @@ struct ConceptRowView: View {
                 .frame(width: 20, height: 20)
         }
         .padding()
-        .background(.thinMaterial)
+        .background(.thinMaterial.opacity(0.5))
         .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }

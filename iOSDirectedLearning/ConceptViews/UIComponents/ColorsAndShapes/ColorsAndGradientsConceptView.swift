@@ -9,22 +9,22 @@ import SwiftUI
 
 struct ColorsAndGradientsConceptView: View {
     var body: some View {
-        ScrollView {
-            VStack(spacing: 20) {
-                BasicColorView()
-                SystemColorView()
-                CustomColorView()
-                GradientView()
-                MaterialView()
-                ConditionalColorView()
-            }
-            .padding()
+        VStack(spacing: 20) {
+            BasicColorView()
+            SystemColorView()
+            CustomColorView()
+            GradientView()
+            MaterialView()
+            ConditionalColorView()
         }
+        .padding()
     }
 }
 
 #Preview {
-    ColorsAndGradientsConceptView()
+    ScrollView {
+        ColorsAndGradientsConceptView()
+    }
 }
 
 struct BasicColorView: View {

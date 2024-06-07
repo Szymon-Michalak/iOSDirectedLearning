@@ -31,7 +31,8 @@ struct PrimaryTextStyle: ViewModifier {
     func body(content: Content) -> some View {
         return content
             .font(.headline)
-            .foregroundStyle(.primary)
+            .foregroundStyle(.white)
+            .fontWeight(.bold)
     }
 }
 
@@ -39,7 +40,7 @@ struct SecondaryTextStyle: ViewModifier {
     func body(content: Content) -> some View {
         return content
             .font(.subheadline)
-            .foregroundColor(.gray)
+            .foregroundColor(.white)
             .multilineTextAlignment(.leading)
     }
 }

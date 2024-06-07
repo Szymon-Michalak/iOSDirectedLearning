@@ -5,16 +5,14 @@ struct CategoryView: View {
 
     var body: some View {
         ZStack {
-            Rectangle()
-                .fill(DomainStyles.backgroundGradient)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            ParticlesViewRepresentable()
                 .ignoresSafeArea()
             if category.topics.isEmpty {
                 ContentUnavailableView {
                     Label {
                         Text("No Concepts Yet")
                             .font(.body)
-                            .foregroundColor(.primary)
+                            .foregroundColor(.white)
                     } icon: {
                         Image(category.image ?? "category/swift")
                             .resizable()
@@ -24,6 +22,7 @@ struct CategoryView: View {
                     }
                 } description: {
                     Text("Stay tuned for updates. We will be adding more concepts soon!")
+                        .foregroundStyle(.white)
                 }
             } else {
                 ScrollView {
@@ -54,11 +53,12 @@ struct CategoryHeaderView: View {
 
     var body: some View {
         Text(title)
+            .fontWeight(.bold)
             .font(.headline)
-            .foregroundColor(.primary)
+            .foregroundColor(.white)
             .frame(maxWidth: .infinity, alignment: .center)
             .padding()
-            .background(.regularMaterial)
+            .background(.regularMaterial.opacity(0.5))
             .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }

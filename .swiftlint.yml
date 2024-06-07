@@ -17,6 +17,7 @@ type_name:
     error: 60
 
 identifier_name:
+  min_length: 0
   max_length:
     warning: 50
     error: 60

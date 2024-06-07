@@ -6,10 +6,8 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Rectangle()
-                    .fill(DomainStyles.backgroundGradient)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .ignoresSafeArea()
+//                MyViewRepresentable()
+//                    .ignoresSafeArea()
                 VStack {
                     ScrollView {
                         LazyVStack {
@@ -29,6 +27,7 @@ struct HomeView: View {
                     }
                 }
             }
+            .background(ParticlesViewRepresentable().ignoresSafeArea())
             .navigationTitle("iOS Directed Learning")
             .toolbarTitleDisplayMode(.inline)
         }

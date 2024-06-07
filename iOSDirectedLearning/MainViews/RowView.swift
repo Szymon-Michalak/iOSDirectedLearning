@@ -15,10 +15,12 @@ struct RowView: View {
             VStack(alignment: .leading) {
                 Text(content.title)
                     .font(.headline)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.white)
                 if let description = content.description {
                     Text(description)
                         .font(.subheadline)
-                        .foregroundColor(.gray)
+                        .foregroundColor(.white)
                 }
             }
             Spacer()
@@ -33,7 +35,7 @@ struct RowView: View {
         .frame(maxWidth: .infinity)
         .padding(.horizontal)
         .padding(.vertical, 10)
-        .background(.thickMaterial)
+        .background(.thickMaterial.opacity(0.5))
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .padding(.horizontal, 25)
     }
