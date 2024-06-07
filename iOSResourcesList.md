@@ -315,8 +315,6 @@ END OF TEMPLATE FOR NEW RESOURCES -->
   - **Link:** https://refactoring.guru/design-patterns/swift
   - [**Explore here**](https://refactoring.guru/design-patterns/swift)
 
-  Got it! Here's the entire list as a single resource:
-
   ## Lists
 
   ### 🖊️ **Best resources for Advanced iOS Developer (Swift)**
@@ -353,3 +351,21 @@ END OF TEMPLATE FOR NEW RESOURCES -->
   - **Tags:** 📅 ⭐ 🚀
   - **Link:** https://www.youtube.com/@Kavsoft
   - [**Watch here**](https://www.youtube.com/@Kavsoft)
+
+## SwiftUI
+
+### 🖊️ **Recreate**
+- **Description:** Recreate UI with SwiftUI in minutes. A video series about recreating popular UI with SwiftUI.
+- **Author:** Jordan Singer, Nav Singh
+- **Tags:** ⏱️ 🚀
+- **Platform:** Substack
+- **Link:** https://recreatecode.substack.com/
+- [**Read here**](https://recreatecode.substack.com/)
+
+## iOS Example
+
+### 📂 **iOS Example**
+- **Description:** iOS Example is a comprehensive collection of useful examples and libraries for iOS development. It covers various topics including UI, media, components, Swift packages, and more, providing developers with practical tools and insights to enhance their projects.
+- **Tags:** 📅 ⭐ 🚀
+- **Link:** https://iosexample.com/
+- [**Read here**](https://iosexample.com/)
