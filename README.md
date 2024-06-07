@@ -2,7 +2,11 @@
 
 Welcome to the iOS Directed Learning repository! This repo contains code examples and explanations of various **iOS**-related concepts. It is designed by me to act as my iOS knowledge second brain. Feel free to propose any changes!
 
-### How This Repo is Structured:
+**Additional Links**
+ - [Code Review Checklist](CodeReviewChecklist.md)
+ - [List of great resources for iOS]()
+
+### How This README is Structured:
 
 Each concept is categorized based on its difficulty level:
 
@@ -22,6 +26,7 @@ Where applicable, each resource is tagged with length indicator:
 - 🕰️ **Medium** (10-30 minutes)
 - ⏳ **Long** (More than 30 minutes)
 
+---
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
@@ -128,6 +133,7 @@ Code Snippets:
 Resources:
 
 - 🎥 🕰️ [Animate Custom shapes with AnimateableData in SwiftUI | Advanced Learning #7](https://www.youtube.com/watch?v=kzrtiPbR3LQ&list=PLwvDm4Vfkdphc1LLLjCaEd87BEg07M97y&index=8)
+
 
 <!-- TEMPLATE FOR NEW CONCEPTS
 
