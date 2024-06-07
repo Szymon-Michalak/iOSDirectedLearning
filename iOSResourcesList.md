@@ -91,6 +91,12 @@ END OF TEMPLATE FOR NEW RESOURCES -->
   - [🖊️ **Awesome Swift**](#-awesome-swift)
 - [SwiftUI](#swiftui)
   - [🎥 **Kavsoft YouTube Channel**](#-kavsoft-youtube-channel)
+- [SwiftUI](#swiftui-1)
+  - [🖊️ **Recreate**](#-recreate)
+- [iOS Example](#ios-example)
+  - [📂 **iOS Example**](#-ios-example)
+- [iOS Development Channels](#ios-development-channels)
+  - [🎥 **Daniel Steinberg - YouTube**](#-daniel-steinberg---youtube)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
