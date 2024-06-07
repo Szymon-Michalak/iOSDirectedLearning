@@ -369,3 +369,12 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Tags:** 📅 ⭐ 🚀
 - **Link:** https://iosexample.com/
 - [**Read here**](https://iosexample.com/)
+
+## iOS Development Channels
+
+### 🎥 **Daniel Steinberg - YouTube**
+- **Description:** Daniel Steinberg's YouTube channel offers a variety of iOS development tutorials and insights. With over 50 videos covering topics such as SwiftData, functions, graphs, and more, this channel provides valuable resources for iOS developers at different skill levels.
+- **Author:** Daniel Steinberg
+- **Tags:** 🎥 🚀
+- **Link:** https://www.youtube.com/@dimsumthinking
+- [**Explore here**](https://www.youtube.com/@dimsumthinking)
