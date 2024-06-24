@@ -97,6 +97,10 @@ END OF TEMPLATE FOR NEW RESOURCES -->
   - [📂 **iOS Example**](#-ios-example)
 - [iOS Development Channels](#ios-development-channels)
   - [🎥 **Daniel Steinberg - YouTube**](#-daniel-steinberg---youtube)
+- [iOS Example](#ios-example-1)
+  - [🖊️ **iOS Example**](#-ios-example-1)
+- [iOS Tips and Tricks](#ios-tips-and-tricks)
+  - [🖊️ **SwiftRocks**](#-swiftrocks)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
