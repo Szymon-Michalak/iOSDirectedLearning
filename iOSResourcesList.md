@@ -2,7 +2,7 @@
 
 Welcome to the **iOS Resources List**! This document compiles a list of valuable resources for learning and mastering iOS development. Each resource is categorized for convenience. Feel free to propose any additions or changes!
 
-### How This Document is Structured
+## How This Document is Structured
 
 Each resource is categorized by type (Blog, Channel, Repositories). This organization aims to help quickly find the information you need.
 
@@ -148,6 +148,40 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Link:** <https://www.swiftbysundell.com/>
 - [**Explore here**](https://www.swiftbysundell.com/)
 
+
+### 🖊️ **SwiftRocks**
+
+- **Description:** Articles covering various aspects of Swift programming and general iOS tips.
+- **Author:** Bruno Rocha
+- **Tags:** 📅 ⭐ 🚀
+- **Link:** <https://swiftrocks.com/>
+- [**Read here**](https://swiftrocks.com/)
+
+### 🖊️ **Point-Free**
+
+- **Description:** Point-Free offers insights into modern UIKit development, focusing on domain modeling, bindings, and navigation, with an emphasis on concise and powerful state management tools inspired by SwiftUI.
+- **Author:** Brandon Williams and Stephen Celis
+- **Tags:** ⏱️ ⭐ 🚀
+- **Link:** <https://www.pointfree.co/blog>
+- [**Read here**](https://www.pointfree.co/blog)
+
+### 🖊️ **Recreate**
+
+- **Description:** Recreate UI with SwiftUI in minutes. A video series about recreating popular UI with SwiftUI.
+- **Author:** Jordan Singer, Nav Singh
+- **Tags:** ⏱️ 🚀
+- **Platform:** Substack
+- **Link:** <https://recreatecode.substack.com/>
+- [**Read here**](https://recreatecode.substack.com/)
+
+
+### 🖊️ **iOS Example**
+
+- **Description:** iOS Example is a comprehensive collection of useful examples and libraries for iOS development. It covers various topics including UI, media, components, Swift packages, and more, providing developers with practical tools and insights to enhance their projects.
+- **Tags:** 📅 ⭐ 🚀
+- **Link:** <https://iosexample.com/>
+- [**Read here**](https://iosexample.com/)
+
 ## Tutorials
 
 ### 🎥 **Stewart Lynch**
@@ -186,7 +220,24 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Link:** <https://www.youtube.com/playlist?list=PLyjgjmI1UzlSUlaQD0RvLwwW-LSlJn-F6>
 - [**Watch here**](https://www.youtube.com/playlist?list=PLyjgjmI1UzlSUlaQD0RvLwwW-LSlJn-F6)
 
-## UIKit
+### 🎥 **Daniel Steinberg - YouTube**
+
+- **Description:** Daniel Steinberg's YouTube channel offers a variety of iOS development tutorials and insights. With over 50 videos covering topics such as SwiftData, functions, graphs, and more, this channel provides valuable resources for iOS developers at different skill levels.
+- **Author:** Daniel Steinberg
+- **Tags:** 🎥 🚀
+- **Link:** <https://www.youtube.com/@dimsumthinking>
+- [**Explore here**](https://www.youtube.com/@dimsumthinking)
+
+### 🎥 **Kavsoft YouTube Channel**
+
+- **Description:** Kavsoft's YouTube channel offers a wealth of tutorials covering various aspects of SwiftUI development. From basic concepts to advanced techniques, Kavsoft provides clear explanations and practical examples to help developers improve their SwiftUI skills.
+- **Author:** Kavsoft
+- **Platform:** Youtube
+- **Tags:** 📅 ⭐ 🚀
+- **Link:** <https://www.youtube.com/@Kavsoft>
+- [**Watch here**](https://www.youtube.com/@Kavsoft)
+
+## Courses
 
 ### 🎓 **The Swift Arcade Professional iOS Development Course**
 
@@ -196,8 +247,6 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Platform:** Udemy
 - **Link:** <https://www.udemy.com/course/the-swift-arcade-professional-ios-development-course-uikit/>
 - [**Learn more**](https://www.udemy.com/course/the-swift-arcade-professional-ios-development-course-uikit/)
-
-## Core Graphics & Animation
 
 ### 🎓 **CALayer Tutorial for iOS: Getting Started**
 
@@ -295,23 +344,6 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Link:** <https://www.rocketsim.app/>
 - [**Explore here**](https://www.rocketsim.app/)
 
-## UIKit
-
-### 🖊️ **Point-Free**
-
-- **Description:** Point-Free offers insights into modern UIKit development, focusing on domain modeling, bindings, and navigation, with an emphasis on concise and powerful state management tools inspired by SwiftUI.
-- **Author:** Brandon Williams and Stephen Celis
-- **Tags:** ⏱️ ⭐ 🚀
-- **Link:** <https://www.pointfree.co/blog>
-- [**Read here**](https://www.pointfree.co/blog)
-
-### 📂 **Awesome iOS Interview Repository**
-
-- **Description:** This repository contains a comprehensive collection of resources for iOS interview preparation, covering a wide range of topics from UIKit to Swift. It includes articles, questions, and guides to help developers excel in iOS interviews.
-- **Author:** [Dasha Korneichuk](https://github.com/dashvlas)
-- **Tags:** 🚀
-- **Link:** <https://github.com/dashvlas/awesome-ios-interview>
-- [**Go to Repository**](https://github.com/dashvlas/awesome-ios-interview)
 
 ## Data Structures
 
@@ -371,7 +403,6 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Link:** <https://developer.apple.com/videos>
 - [**Watch here**](https://developer.apple.com/videos/)
 
-## Guides
 
 ### 🖊️ **Awesome Swift**
 
@@ -381,63 +412,10 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Link:** <https://github.com/matteocrippa/awesome-swift>
 - [**Read here**](https://github.com/matteocrippa/awesome-swift)
 
-## SwiftUI
+### 📂 **Awesome iOS Interview Repository**
 
-### 🎥 **Kavsoft YouTube Channel**
-
-- **Description:** Kavsoft's YouTube channel offers a wealth of tutorials covering various aspects of SwiftUI development. From basic concepts to advanced techniques, Kavsoft provides clear explanations and practical examples to help developers improve their SwiftUI skills.
-- **Author:** Kavsoft
-- **Platform:** Youtube
-- **Tags:** 📅 ⭐ 🚀
-- **Link:** <https://www.youtube.com/@Kavsoft>
-- [**Watch here**](https://www.youtube.com/@Kavsoft)
-
-## SwiftUI
-
-### 🖊️ **Recreate**
-
-- **Description:** Recreate UI with SwiftUI in minutes. A video series about recreating popular UI with SwiftUI.
-- **Author:** Jordan Singer, Nav Singh
-- **Tags:** ⏱️ 🚀
-- **Platform:** Substack
-- **Link:** <https://recreatecode.substack.com/>
-- [**Read here**](https://recreatecode.substack.com/)
-
-## iOS Example
-
-### 📂 **iOS Example**
-
-- **Description:** iOS Example is a comprehensive collection of useful examples and libraries for iOS development. It covers various topics including UI, media, components, Swift packages, and more, providing developers with practical tools and insights to enhance their projects.
-- **Tags:** 📅 ⭐ 🚀
-- **Link:** <https://iosexample.com/>
-- [**Read here**](https://iosexample.com/)
-
-## iOS Development Channels
-
-### 🎥 **Daniel Steinberg - YouTube**
-
-- **Description:** Daniel Steinberg's YouTube channel offers a variety of iOS development tutorials and insights. With over 50 videos covering topics such as SwiftData, functions, graphs, and more, this channel provides valuable resources for iOS developers at different skill levels.
-- **Author:** Daniel Steinberg
-- **Tags:** 🎥 🚀
-- **Link:** <https://www.youtube.com/@dimsumthinking>
-- [**Explore here**](https://www.youtube.com/@dimsumthinking)
-
-## iOS Example
-
-### 🖊️ **iOS Example**
-
-- **Description:** A nice collection of often useful examples done in Objective-C and Swift. iOS Example's goal is to be the go-to website for developers looking for Objective-C and Swift libraries and open-source projects to get their work done.
-- **Author:** iOS Example
-- **Tags:** 📄 ⭐ 🚀
-- **Link:** <https://iosexample.com>
-- [**Visit iOS Example**](https://iosexample.com)
-
-## iOS Tips and Tricks
-
-### 🖊️ **SwiftRocks**
-
-- **Description:** Articles covering various aspects of Swift programming and general iOS tips.
-- **Author:** Bruno Rocha
-- **Tags:** 📅 ⭐ 🚀
-- **Link:** <https://swiftrocks.com/>
-- [**Read here**](https://swiftrocks.com/)
+- **Description:** This repository contains a comprehensive collection of resources for iOS interview preparation, covering a wide range of topics from UIKit to Swift. It includes articles, questions, and guides to help developers excel in iOS interviews.
+- **Author:** [Dasha Korneichuk](https://github.com/dashvlas)
+- **Tags:** 🚀
+- **Link:** <https://github.com/dashvlas/awesome-ios-interview>
+- [**Go to Repository**](https://github.com/dashvlas/awesome-ios-interview)
