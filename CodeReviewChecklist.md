@@ -1562,8 +1562,6 @@ let name: String = "John"
    }
    ```
 
-I apologize for that oversight. Let's cover the dependency injection section now.
-
 ### 15. Inject Dependencies
 
 **Checkpoints:**
