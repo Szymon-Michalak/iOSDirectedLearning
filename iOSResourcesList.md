@@ -106,7 +106,7 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 
 ---
 
-## iOS Development Blogs
+## iOS Development
 
 ### 🖊️ **Holy Swift**
 
@@ -148,7 +148,6 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Link:** <https://www.swiftbysundell.com/>
 - [**Explore here**](https://www.swiftbysundell.com/)
 
-
 ### 🖊️ **SwiftRocks**
 
 - **Description:** Articles covering various aspects of Swift programming and general iOS tips.
@@ -174,7 +173,6 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Link:** <https://recreatecode.substack.com/>
 - [**Read here**](https://recreatecode.substack.com/)
 
-
 ### 🖊️ **iOS Example**
 
 - **Description:** iOS Example is a comprehensive collection of useful examples and libraries for iOS development. It covers various topics including UI, media, components, Swift packages, and more, providing developers with practical tools and insights to enhance their projects.
@@ -182,7 +180,13 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Link:** <https://iosexample.com/>
 - [**Read here**](https://iosexample.com/)
 
-## Tutorials
+### 🖊️ **Create with Swift**
+
+- **Description:** Create with Swift offers a variety of resources for learning Swift programming, including tutorials, code snippets, and collaborative workshops. It aims to make Swift accessible to all developers, emphasizing innovation and community engagement.
+- **Author:** imaginary institute
+- **Tags:** ⭐ 🚀
+- **Link:** <https://www.createwithswift.com>
+- [**Visit Create with Swift**](https://www.createwithswift.com)
 
 ### 🎥 **Stewart Lynch**
 
@@ -237,7 +241,18 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Link:** <https://www.youtube.com/@Kavsoft>
 - [**Watch here**](https://www.youtube.com/@Kavsoft)
 
-## Courses
+## Developer Advocacy and Firebase
+
+### 🖊️ **Peter Friese - Developer Advocate**
+
+- **Description:** Peter Friese, a Developer Advocate at Google focusing on Firebase, shares insights and best practices for iOS app development through his personal blog, videos on YouTube, and contributions to the Firebase blog.
+- **Author:** Peter Friese
+- **Tags:** ⭐ 🚀
+- **Platform:**
+- **Link:** <https://peterfriese.dev/>
+- [**Read here**](https://peterfriese.dev)
+
+## UIKit
 
 ### 🎓 **The Swift Arcade Professional iOS Development Course**
 
@@ -323,18 +338,15 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Link:** <https://swift-ast-explorer.com/>
 - [**Explore here**](https://swift-ast-explorer.com/)
 
-## Data Structures & Algorithms
-
-### 🎓 **The Swift Arcade Data Structures and Algorithms Bootcamp**
-
-- **Description:** This Udemy course covers fundamental computer science concepts crucial for interviews at major tech companies like Google, Apple, Facebook, Amazon, and Spotify. Topics include arrays, linked lists, big O notation, stacks & queues, hash tables, binary trees, dynamic programming, sorting algorithms, graphs, and more.
-- **Author:** Jonathan Rasmusson
-- **Platform:** Udemy
-- **Tags:** ⭐ 🚀
-- **Link:** <https://www.udemy.com/course/the-swift-arcade-data-structures-and-algorithms-bootcamp/>
-- [**Read here**](https://www.udemy.com/course/the-swift-arcade-data-structures-and-algorithms-bootcamp/)
-
 ## Xcode
+
+### 🛠️ **Privacy Manifest Generator**
+
+- **Description:** This tool facilitates the creation of the PrivacyInfo.xcprivacy file required by Apple starting May 1st, 2024. It simplifies the process by allowing users to select necessary API usage categories and automatically generates the XML file for inclusion in Xcode projects.
+- **Author:** donnywals.com
+- **Tags:** 🛠️ ⭐ 🚀
+- **Link:** <https://www.privacymanifest.dev/>
+- [**Use Privacy Manifest Generator**](https://www.privacymanifest.dev/)
 
 ### 💻 **RocketSim - Enhancing the Xcode Simulators**
 
@@ -344,8 +356,16 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Link:** <https://www.rocketsim.app/>
 - [**Explore here**](https://www.rocketsim.app/)
 
-
 ## Data Structures
+
+### 🎓 **The Swift Arcade Data Structures and Algorithms Bootcamp**
+
+- **Description:** This Udemy course covers fundamental computer science concepts crucial for interviews at major tech companies like Google, Apple, Facebook, Amazon, and Spotify. Topics include arrays, linked lists, big O notation, stacks & queues, hash tables, binary trees, dynamic programming, sorting algorithms, graphs, and more.
+- **Author:** Jonathan Rasmusson
+- **Platform:** Udemy
+- **Tags:** ⭐ 🚀
+- **Link:** <https://www.udemy.com/course/the-swift-arcade-data-structures-and-algorithms-bootcamp/>
+- [**Read here**](https://www.udemy.com/course/the-swift-arcade-data-structures-and-algorithms-bootcamp/)
 
 ### 📂 **Swift Algorithm Club**
 
@@ -402,7 +422,6 @@ END OF TEMPLATE FOR NEW RESOURCES -->
 - **Tags:** 📅 ⭐ 🚀
 - **Link:** <https://developer.apple.com/videos>
 - [**Watch here**](https://developer.apple.com/videos/)
-
 
 ### 🖊️ **Awesome Swift**
 
